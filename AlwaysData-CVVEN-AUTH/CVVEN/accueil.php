@@ -15,7 +15,7 @@
         <?php include("nav.php") ?>
         <div class="form-location">
             <center>
-                <h1>CEVVN</h1>
+                <h1>CVVEN</h1>
                 <img src="http://theopruski.alwaysdata.net/TP_Location/Images/maison-contemporaine.jpg" width="50%">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim, quasi aspernatur veniam iusto molestias accusamus fugit sit ratione accusantium perspiciatis provident consequuntur porro beatae possimus velit quam, quo tenetur?</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, accusamus perspiciatis inventore et deleniti soluta repellat incidunt architecto sequi nulla similique, voluptates ipsum itaque ex distinctio neque enim reprehenderit eius.</p>

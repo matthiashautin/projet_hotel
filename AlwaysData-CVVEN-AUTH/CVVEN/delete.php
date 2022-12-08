@@ -5,22 +5,7 @@ if (!isset($_SESSION['mail'])) {
     header("location:accueil.php");
     exit;
 }
-
-$host = 'mysql-cvven.alwaysdata.net';
-$dbname = 'cvven_bdd_projet_hotel';
-$username = 'cvven';
-$password = 'G;d,Q7)=4wXj36qL';
-
-
-$objetPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-$pdoStat = $objetPDO->prepare('DELETE FROM Client WHERE ID=:id LIMIT 1');
-$pdoStat->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
-$executeIsOk = $pdoStat->execute();
-if ($executeIsOk) {
-    $message = "Client supprimé";
-} else {
-    $message = "Client non supprimé";
-}
+require_once 'conndb.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">

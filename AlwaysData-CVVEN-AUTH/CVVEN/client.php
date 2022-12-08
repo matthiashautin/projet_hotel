@@ -5,26 +5,7 @@ if (!isset($_SESSION['mail'])) {
     header("location:accueil.php");
     exit;
 }
-
-$host = 'mysql-cvven.alwaysdata.net';
-$dbname = 'cvven_bdd_projet_hotel';
-$username = 'cvven';
-$password = 'G;d,Q7)=4wXj36qL';
-
-
-$dsn = "mysql:host=$host;dbname=$dbname";
-$sql = "SELECT * FROM Client";
-
-try {
-    $pdo = new PDO($dsn, $username, $password);
-    $stmt = $pdo->query($sql);
-    if ($stmt === false) {
-        die("Erreur");
-    }
-} catch (PDOException $e) {
-    echo $e->getMessage();
-}
-
+require_once 'conndb.php';
 ?>
 <!DOCTYPE html>
 <html>

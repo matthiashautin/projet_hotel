@@ -6,10 +6,7 @@ if (!isset($_SESSION['mail'])) {
     exit;
 }
 
-$host = 'mysql-cvven.alwaysdata.net';
-$dbname = 'cvven_bdd_projet_hotel';
-$username = 'cvven';
-$password = 'G;d,Q7)=4wXj36qL';
+require_once 'conndb.php';
 
 
 $objetPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

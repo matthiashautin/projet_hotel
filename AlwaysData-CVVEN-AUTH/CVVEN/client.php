@@ -6,10 +6,11 @@ if (!isset($_SESSION['mail'])) {
     exit;
 }
 
-$host = 'mysql-theopruski.alwaysdata.net';
-$dbname = 'theopruski_bdd_cvven';
-$username = '243681';
-$password = 'Theo040603';
+$host = 'mysql-cvven.alwaysdata.net';
+$dbname = 'cvven_bdd_projet_hotel';
+$username = 'cvven';
+$password = 'G;d,Q7)=4wXj36qL';
+
 
 $dsn = "mysql:host=$host;dbname=$dbname";
 $sql = "SELECT * FROM Client";
@@ -48,7 +49,7 @@ try {
                 <h1 class="donnee">Base de donnees</h1>
 
                 <head>Afficher la table client</head>
-
+                
                 <body>
                     <h1>Liste des utilisateurs</h1>
                     <a href="register.php">
@@ -77,10 +78,10 @@ try {
                                     <td><?php echo htmlspecialchars($row['mail']); ?></td>
                                     <td><?php echo htmlspecialchars($row['password']); ?></td>
                                     <td>
-                                        <center><a href="https://theopruski.alwaysdata.net/CVVEN/delete.php?action=delete&id=<?= $row['ID'] ?>"><input type="button" value="❌" name="❌"></center></a>
+                                        <center><a href="https://cvven.alwaysdata.net/CVVEN/delete.php?action=delete&id=<?= $row['ID'] ?>"><input type="button" value="❌" name="❌"></center></a>
                                     </td>
                                     <td>
-                                        <center><a href="https://theopruski.alwaysdata.net/CVVEN/form-modif.php?action=modif&id=<?= $row['ID'] ?>"><input type="button" value="✏" name="✏"></center></a>
+                                        <center><a href="https://cvven.alwaysdata.net/CVVEN/form-modif.php?action=modif&id=<?= $row['ID'] ?>"><input type="button" value="✏" name="✏"></center></a>
                                     </td>
                                 </tr>
                             <?php endwhile; ?>

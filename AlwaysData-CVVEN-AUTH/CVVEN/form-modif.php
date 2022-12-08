@@ -5,11 +5,11 @@ if (!isset($_SESSION['mail'])) {
     header("location:accueil.php");
     exit;
 }
+$host = 'mysql-cvven.alwaysdata.net';
+$dbname = 'cvven_bdd_projet_hotel';
+$username = 'cvven';
+$password = 'G;d,Q7)=4wXj36qL';
 
-$host = 'mysql-theopruski.alwaysdata.net';
-$dbname = 'theopruski_bdd_cvven';
-$username = '243681';
-$password = 'Theo040603';
 
 $objetPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 $pdoStat = $objetPDO->prepare('SELECT*FROM Client WHERE ID=:id');

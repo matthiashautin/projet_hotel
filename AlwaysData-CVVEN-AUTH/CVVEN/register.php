@@ -1,8 +1,9 @@
 <?php
-$host = 'mysql-theopruski.alwaysdata.net';
-$dbname = 'theopruski_bdd_cvven';
-$username = '243681';
-$password = 'Theo040603';
+$host = 'mysql-cvven.alwaysdata.net';
+$dbname = 'cvven_bdd_projet_hotel';
+$username = 'cvven';
+$password = 'G;d,Q7)=4wXj36qL';
+
 
 if (isset($_POST['Envoyer'])) {
     try {
@@ -13,7 +14,8 @@ if (isset($_POST['Envoyer'])) {
         $prenom = $_POST['Prenom'];
         $telephone = $_POST['telephone'];
         $mail = $_POST['mail'];
-        $password = $_POST['password'];
+        $password=md5($_POST['password']);
+
 
         $sql = ("INSERT INTO `Client`(`Nom`, `Prenom`, `telephone`, `mail`, `password`) VALUES ('$nom','$prenom','$telephone', '$mail','$password')");
         $stmt = $conn->prepare($sql);

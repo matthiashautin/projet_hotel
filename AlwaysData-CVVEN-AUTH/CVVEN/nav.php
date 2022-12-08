@@ -8,10 +8,10 @@ if (isset($_SESSION['mail'])) {
 }
 ?>
 <nav class="navbar">
-    <a href="https://theopruski.alwaysdata.net/CVVEN/accueil.php">Accueil</a>
-    <a href="https://theopruski.alwaysdata.net/CVVEN/register.php">Formulaire d'inscription</a>
+    <a href="https://cvven.alwaysdata.net/CVVEN/accueil.php">Accueil</a>
+    <a href="https://cvven.alwaysdata.net/CVVEN/register.php">Formulaire d'inscription</a>
     <?php if (isset($_SESSION['mail'])) : ?>
-        <a href="https://theopruski.alwaysdata.net/CVVEN/client.php">Utilisateurs</a>
+        <a href="https://cvven.alwaysdata.net/CVVEN/client.php">Utilisateurs</a>
     <?php endif; ?>
-    <a href="https://theopruski.alwaysdata.net/CVVEN/<?= $session ?>"><?= $lib ?></a>
+    <a href="https://cvven.alwaysdata.net/CVVEN/<?= $session ?>"><?= $lib ?></a>
 </nav>

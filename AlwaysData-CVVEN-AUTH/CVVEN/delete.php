@@ -6,10 +6,11 @@ if (!isset($_SESSION['mail'])) {
     exit;
 }
 
-$host = 'mysql-theopruski.alwaysdata.net';
-$dbname = 'theopruski_bdd_cvven';
-$username = '243681';
-$password = 'Theo040603';
+$host = 'mysql-cvven.alwaysdata.net';
+$dbname = 'cvven_bdd_projet_hotel';
+$username = 'cvven';
+$password = 'G;d,Q7)=4wXj36qL';
+
 
 $objetPDO = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 $pdoStat = $objetPDO->prepare('DELETE FROM Client WHERE ID=:id LIMIT 1');

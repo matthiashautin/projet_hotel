@@ -8,14 +8,9 @@ if (!isset($_SESSION['mail'])) {
 require_once 'conndb.php';
 
 $sql = "SELECT * FROM Client";
-
-try {
-    $stmt = $pdo->query($sql);
-    if ($stmt === false) {
-        die("Erreur");
-    }
-} catch (PDOException $e) {
-    echo $e->getMessage();
+$stmt = $pdo->query($sql);
+if ($stmt === false) {
+    die("Erreur");
 }
 ?>
 <!DOCTYPE html>

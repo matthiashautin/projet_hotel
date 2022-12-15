@@ -6,6 +6,18 @@ if (!isset($_SESSION['mail'])) {
     exit;
 }
 require_once 'conndb.php';
+
+$sql = "SELECT * FROM Client";
+
+try {
+    $pdo = new PDO($dsn, $username, $password);
+    $stmt = $pdo->query($sql);
+    if ($stmt === false) {
+        die("Erreur");
+    }
+} catch (PDOException $e) {
+    echo $e->getMessage();
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +42,7 @@ require_once 'conndb.php';
                 <h1 class="donnee">Base de donnees</h1>
 
                 <head>Afficher la table client</head>
-                
+
                 <body>
                     <h1>Liste des utilisateurs</h1>
                     <a href="register.php">

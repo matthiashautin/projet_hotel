@@ -10,7 +10,6 @@ require_once 'conndb.php';
 $sql = "SELECT * FROM Client";
 
 try {
-    $pdo = new PDO($dsn, $username, $password);
     $stmt = $pdo->query($sql);
     if ($stmt === false) {
         die("Erreur");

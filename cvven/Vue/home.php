@@ -18,5 +18,3 @@ include "../Controleur/connectuser.php";
 </body>
 
 </html>
-
-</html>

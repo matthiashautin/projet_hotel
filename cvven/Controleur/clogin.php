@@ -25,7 +25,7 @@ if (isset($_POST['Connexion'])) {
                 session_start();
                 $_SESSION['admin_id'] = $rows['ID'];
                 $message = 'Connexion réussi admin';
-                header('location:../Vue/admin_page.php');
+                header('location:../Vue/admin_res.php');
     
             } else if($rows['users_type'] == 'user'){
 

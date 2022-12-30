@@ -1,12 +1,13 @@
 <?php
-
-require_once "../Controleur/conn_db.php";
+include_once('../Controleur/conn_db.php');  
 
 session_start();
 
 if (isset($_POST['Connexion'])) {
-        $objetPDO = new PDO("mysql:host=$db_servername;dbname=$db_name", $db_username, $db_pass);
-        $pdoStat = $objetPDO->prepare('SELECT * FROM Client WHERE mail=:mail AND password=:password');
+        $database = new Connection();
+        $db = $database->open();
+        
+        $pdoStat = $db->prepare('SELECT * FROM Client WHERE mail=:mail AND password=:password');
        
         $mail = $_POST['mail'];
         $password = $_POST['password'];

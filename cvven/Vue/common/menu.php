@@ -26,7 +26,7 @@
      }
 ?>
 
-<div class="container">
+<div class="content">
     <div class="navigation">
         <div class="top">
             <div class="logo">
@@ -35,38 +35,38 @@
                 <h2><span>admin</span><h2>
             </div>
         <div class="sidebar">
-            <ul>
-                <li>
+            <ul1>
+                <li1>
                     <a href="admin_res.php" class='<?=$reservation?>'>
-                        <h3 class="reservation <?=$reservation?>">Reservation</h3>
+                        <h4 class="reservation <?=$reservation?>">Reservation</h4>
                     </a>
-                </li>
-                <li>
+                </li1>
+                <li1>
                     <a href="admin_heb.php" class='<?=$hebergement?>'>
-                        <h3 class="annonce <?=$hebergement?>">Hebergement</h3>
+                        <h4 class="annonce <?=$hebergement?>">Hebergement</h4>
                     </a>
-                </li>
-                <li>
+                </li1>
+                <li1>
                     <a href="admin_resto.php" class='<?=$restauration?>'>
-                        <h3 class="piece <?=$restauration?>">Restauration</h3>
+                        <h4 class="piece <?=$restauration?>">Restauration</h4>
                     </a>
-                </li>
-                <li>
+                </li1>
+                <li1>
                     <a href="admin_anim.php" class='<?=$animation?>'>
-                        <h3 class="services <?=$animation?>">Animation</h3>
+                        <h4 class="services <?=$animation?>">Animation</h4>
                     </a>
-                </li>
-                <li>
+                </li1>
+                <li1>
                     <a href="admin_photo.php" class='<?=$photo?>'>
-                        <h3 class="photo <?=$photo?>">Photo</h3>
+                        <h4 class="photo <?=$photo?>">Photo</h4>
                     </a>
-                </li>
-                <li>
+                </li1>
+                <li1>
                     <a href="../Controleur/clogout.php" class='<?=$logout?>'>
-                        <h3>Logout</h3>
+                        <h4>Logout</h4>
                     </a>
-                </li>
-            </ul>
+                </li1>
+            </ul1>
         </div>
     </div>
 </div>

@@ -5,6 +5,9 @@
     --orange:#f39c12;
     --red:#e74c3c;
     --black:#333;
+    --blue: #2f6cc6;
+    --green1: #00ab66;
+    --red1:#dc210e;
     --moreblack: #222;
     --light-color:#666;
     --white:#fff;
@@ -17,17 +20,22 @@
     margin: 0;
     padding: 0;
 }
+*, ::after, ::before {
+    box-sizing: inherit;
+  }
 
 html {
     background-color: var(--moreblack);
 }
+body {
+    background-color: var(--moreblack);
+}
 
-.content {
+.container {
     font-family: 'Poppins', sans-serif;
     position: relative;
     width: 40rem;
     top: 2rem;
-    left: 27rem;
 }
 
 .title {
@@ -70,33 +78,56 @@ td a {
     text-decoration: none;
 }
 
-.new {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15rem;
-    height: 3rem;
-    margin-top: 1rem;
-    background-color: var(--light-bg);
-    border-radius: 2rem;
-    transition: .4s;
+.btn-add {
+    margin-bottom: 2rem;
+    padding: .5rem;
+    background-color: var(--blue);
+    border-radius: 1rem;
+    color: #fff;
+    transition: .3s;
 }
 
-.new a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #666;
-    width: 15rem;
-    height: 3rem;
-    transition: .4s;
+.btn-add:hover {
+    background-color: #0c49a3;
 }
 
-.new a:hover {
+.btn-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .3rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--green1);
+    border: 2px outset #fff;
+    border-radius: 1rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn-edit:hover {
+    background-color: #047246;
     color: #fff;
 }
 
-.new:hover {
-    background-color: var(--green);
+.btn-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .3rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--red1);
+    border: 2px outset #fff;
+    border-radius: 1rem;
+    color: #fff;
+    transition: .3s;
 }
+
+.btn-delete:hover {
+    background-color: #a71404;
+    color: #fff;
+}
+.row {
+    --bs-gutter-x: 17rem;
+  }

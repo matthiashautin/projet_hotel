@@ -82,6 +82,7 @@ td a {
     margin-bottom: 2rem;
     padding: .5rem;
     background-color: var(--blue);
+    border: 2px outset #fff;
     border-radius: 1rem;
     color: #fff;
     transition: .3s;

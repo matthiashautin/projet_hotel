@@ -20,26 +20,24 @@ include "./common/menu.php";
         </div>
         <div class="row">
             <div class="col-12">
-                    <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#addnew">
-                        Nouvelle Animation
-                    </button>
-                    <?php
-                        include('../Controleur/messageadmin.php');
-                    ?>
-                <table class="table table-bordered table-striped">
-            <thead>
-                <th>Id</th>
-                <th>nomanim</th>
-                <th>vacances_scol</th>
-                <th>hors_vacances_scol</th>
-                <th>Action</th>
-            </thead>
+                <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#addnew">
+                    Nouvelle Animation
+                </button>
                 <?php
-                    include "../Controleur/admin_anim/animation.php"; 
+                    include('../Controleur/messageadmin.php');
                 ?>
-                </tbody>
-              </table>
-
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <th class="top-th">Id</th>
+                    <th class="top-th">nom_anim</th>
+                    <th class="top-th">vacances_scol</th>
+                    <th class="top-th">hors_vacances_scol</th>
+                    <th class="top-th">Action</th>
+                </thead>
+                <?php
+                    include "../Modele/admin_anim/animation.php"; 
+                ?>
+            </table>
         </div>
     </div>
 </div>

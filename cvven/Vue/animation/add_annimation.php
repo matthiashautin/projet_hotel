@@ -7,7 +7,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
       <div class="modal-body">
-        <form method="POST" action="../Controleur/admin_anim/add.php">
+        <form method="POST" action="../Modele/admin_anim/add.php">
             <div class="mb-3 row">
               <label class="col-sm-2 col-form-label">Nom_Anim</label>
                 <div class="col-sm-10">

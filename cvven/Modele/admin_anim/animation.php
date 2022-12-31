@@ -12,9 +12,9 @@
                 <td><?php echo $row['nomanim']; ?></td>
                 <td><?php echo $row['Vacances_Scolaire']; ?></td>
                 <td><?php echo $row['Hors_Vacances_Scolaire']; ?></td>
-                <td>
-                    <a href="#edit_<?php echo $row['ID']; ?>" class="btn-edit" data-bs-toggle="modal"> Edit</a>
-                    <a href="#delete_<?php echo $row['ID']; ?>" class="btn-delete" data-bs-toggle="modal"> Delete</a>
+                <td class="td-edit-delete">
+                    <a href="#edit_<?php echo $row['ID']; ?>" class="btn-edit" data-bs-toggle="modal"> Modifier</a>
+                    <a href="#delete_<?php echo $row['ID']; ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a>
                 </td>
                 <?php include('../Vue/animation/edit_delete_animation.php'); ?>
             </tr>

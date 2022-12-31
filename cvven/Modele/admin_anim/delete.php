@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include('../conn_db.php');
+    include('../../Controleur/conn_db.php');
 
     if(isset($_GET['ID'])){
         //connection

@@ -1,6 +1,6 @@
 <?php
     session_start();   
-    include_once('../conn_db.php');
+    include_once('../../Controleur/conn_db.php');
 
     if(isset($_POST['edit'])){
         //connection

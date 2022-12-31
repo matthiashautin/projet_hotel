@@ -7,7 +7,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
         <div class="modal-body">
-        <form method="POST" action="../Controleur/admin_anim/edit.php?ID=<?php echo $row['ID']; ?>">
+        <form method="POST" action="../Modele/admin_anim/edit.php?ID=<?php echo $row['ID']; ?>">
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Nom_Anim</label>
             <div class="col-sm-10">
@@ -30,7 +30,7 @@
         </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-        <button type="submit" name="edit" class="btn btn-primary"> Update</a>
+        <button type="submit" name="edit" class="btn btn-primary">Modifier</a>
     </form>
         </div>
     </div>
@@ -51,7 +51,7 @@
       </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-            <a href="../Controleur/admin_anim/delete.php?ID=<?php echo $row['ID']; ?>" class="btn btn-danger"> Oui</a>
+            <a href="../Modele/admin_anim/delete.php?ID=<?php echo $row['ID']; ?>" class="btn btn-danger"> Oui</a>
         </div>
     </div>
   </div>

@@ -4,8 +4,8 @@ require_once "../Controleur/conn_db.php";
 
 if (isset($_POST['Envoyer'])) {
     try {
-        $conn = new PDO("mysql:host=$db_servername;dbname=$db_name", $db_username, $db_pass);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $database = new Connection();
+        $db = $database->open();
 
         $nom = $_POST['Nom'];
         $prenom = $_POST['Prenom'];

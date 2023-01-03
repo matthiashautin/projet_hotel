@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../css/menu.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <?php
      $url = $_SERVER['REQUEST_URI'];    
     //var_dump($url);
@@ -26,15 +27,20 @@
      }
 ?>
 
-<div class="content">
-    <div class="navigation">
+<header id="sidebar">
+    <div class="hamburger" onclick="myFunction()">
+        <div class="top"></div>
+        <div class="mid"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="content">
         <div class="top">
             <div class="logo">
                 <img src="../Image/hotel.png">
             </div>
-                <h2><span>admin</span><h2>
-            </div>
-        <div class="sidebar">
+            <h2><span>admin</span><h2>
+        </div>
+            <div class="sidebar1">
             <ul1>
                 <li1>
                     <a href="admin_res.php" class='<?=$reservation?>'>
@@ -65,8 +71,13 @@
                     <a href="../Controleur/clogout.php" class='<?=$logout?>'>
                         <h4>Logout</h4>
                     </a>
-                </li1>
+                </li1>   
             </ul1>
         </div>
     </div>
-</div>
+    <script>
+        function myFunction() {
+        document.getElementById('sidebar').classList.toggle("open-sidebar");
+        }
+    </script>
+</header>

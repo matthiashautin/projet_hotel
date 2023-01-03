@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
 
-
 :root{
     --green:#27ae60;
     --orange:#f39c12;
@@ -9,6 +8,7 @@
     --light-color:#666;
     --white:#fff;
     --light-bg:#f6f6f6;
+    --gray: rgb(173, 170, 170) ;
     --border:.3rem solid rgba(0, 0, 0, 0.47);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
  }
@@ -18,19 +18,65 @@
     padding: 0;
 }
 
-.navigation {
-    background-color: var(--black);
+header#sidebar {
     position: fixed;
-    width: 23rem;
-    height: 100vh;
     z-index: 999;
-    transition: .5s;
-    overflow: hidden;
-    box-shadow: 3px 5px 10px rgba(165, 165, 165, 0.683);
-
+    height: 100vh;
+    background-color: var(--black);
+    min-width: 22rem;
+    transform: translateX(-100%);
+    transition: .2s;
 }
 
-.navigation ul1 li1{
+header#sidebar.open-sidebar {
+    transform: translateX(0%);
+}
+
+header#sidebar .hamburger {
+    width: 25px;
+    height: 25px;
+    background-color: #baa56f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 25rem;
+    top: 2rem;
+    padding: 15px;
+    border-radius: 11px;
+}
+
+header#sidebar .hamburger .top,   
+header#sidebar .hamburger .mid,  
+header#sidebar .hamburger .bottom {
+    width: 35px;
+    height: 5px;
+    background: #666;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+header#sidebar.open-sidebar .hamburger .top {
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+    width: 37px;
+}
+
+header#sidebar.open-sidebar .hamburger .mid {
+    opacity: 0;
+}
+
+header#sidebar.open-sidebar .hamburger .bottom {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -11px;
+    width: 37px;
+}
+
+
+header ul1 li1{
     position: relative;
     width: 23rem;
     list-style: none;
@@ -53,14 +99,14 @@
     font-weight: 600;
 }
 
-.navigation ul1 li1{
+.sidebar1 ul1 li1{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.navigation ul1 li1 a {
+.sidebar1 ul1 li1 a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,26 +121,28 @@
     transition: .3s;
 }
 
-.navigation ul1 li1 a h4{
+.sidebar1 ul1 li1 a h4{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 500;
     margin: .5rem;
 }
 
-.navigation ul1 li1 a:hover {
+.sidebar1 ul1 li1 a:hover {
     margin-left: 2.5rem;
 }
 
-.navigation ul1 li1 a.logout {
-    margin-top: 15%;
+.sidebar1 ul1 li1 a.logout {
+    margin-top: 2rem;
     background-color: var(--red);
 }
 
-.navigation ul1 li1 a.logout:hover {
+.sidebar1 ul1 li1 a.logout:hover {
     margin-left: 0;
 }
 
-.navigation .sidebar a.active{
+.sidebar1 a.active{
     background: var(--green);
   }
+
+ 

@@ -203,3 +203,9 @@ td.td-edit-delete{
     color: var(--black);
     font-weight: 700;
   }
+
+  .h5, h5 {
+    font-size: 1.25rem;
+    color: var(--black);
+    font-weight: 700;
+  }

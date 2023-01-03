@@ -8,9 +8,9 @@
         $db = $database->open();
         try{
             //preparer la sql injection pour la table animation
-            $sql = "DELETE FROM Restauration WHERE ID = '".$_GET['ID']."'";
+            $sql = "DELETE FROM Region WHERE ID = '".$_GET['ID']."'";
             //excecuter l'injection sql instruction if-else dans l'exécution de notre requête
-            $_SESSION['message'] = ( $db->exec($sql) ) ? 'Restauration supprimé avec succès' : 'Une erreur est survenue. Impossible de supprimer cette restauration';
+            $_SESSION['message'] = ( $db->exec($sql) ) ? 'Region supprimé avec succès' : 'Une erreur est survenue. Impossible de supprimer cette region';
         }
         catch(PDOException $e){
             $_SESSION['message'] = $e->getMessage();
@@ -19,9 +19,9 @@
         $database->close();
     }
     else{
-    $_SESSION['message'] = 'Selectionnez une restauration à supprimer en premier';
+    $_SESSION['message'] = 'Selectionnez une region à supprimer en premier';
     }
 
-    header('location: ../../Vue/admin_resto.php');
+    header('location: ../../Vue/admin_region.php');
 
 ?>

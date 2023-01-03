@@ -33,16 +33,23 @@ CREATE TABLE Animation (
     Hors_Vacances_Scolaire BOOL NOT NULL
 );
 
+CREATE TABLE Region {
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nom_Region VARCHAR(50),
+}
+
 CREATE TABLE Reservation (
     Hebergement_ID INT,
     Client_ID INT,
     Restauration_ID INT,
     Animation_ID INT,
+    Region_ID INT,
     DateDebut DATETIME,
     DateFin DATETIME NOT NULL,
     CONSTRAINT FK_ReservationHebergement FOREIGN KEY (Hebergement_ID) REFERENCES Hebergement(ID),
     CONSTRAINT FK_ReservationClient FOREIGN KEY (Client_ID) REFERENCES Client(ID),
     CONSTRAINT FK_ReservationRestauration FOREIGN KEY (Restauration_ID) REFERENCES Restauration(ID),
     CONSTRAINT FK_ReservationAnimation FOREIGN KEY (Animation_ID) REFERENCES Animation(ID),
-    PRIMARY KEY (Hebergement_ID, Client_ID, Restauration_ID, Animation_ID, DateDebut, DateFin)
+    CONSTRAINT FK_ReservationRegion FOREIGN KEY (Region_ID) REFERENCES Region(ID),
+    PRIMARY KEY (Hebergement_ID, Client_ID, Restauration_ID, Animation_ID, Region_ID, DateDebut, DateFin)
 );

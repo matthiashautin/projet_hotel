@@ -20,8 +20,90 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 body  {
     background-color: var(--moreblack);
+}
+
+.title-page {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    /* Place le text au centre de la page */
+    text-align: center;
+    /* Met le text en majuscule */
+    text-transform: uppercase;
+
+}
+
+section .title-image h3 {
+    color: var(--white-light);
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+section .Rochelle .title-image {
+    /* Permet de laisser de la marge pa rapport à l'élément */
+    padding: 7% 13%;
+    /* Permet de mettre un élément flottant à gauche */
+    float: left;
+}
+
+section .Rousses .title-image {
+    padding: 7% 13%;
+    /* Permet de mettre un élément flottant à droite */
+    float: right;
+}
+
+section .Saint-Antheme .title-image {
+    padding: 7% 13%;
+    float: left;
+    /* Permet de laisser de la marge par rapport au top (haut de la page) */
+    margin-top: -130px;
+}
+
+section .Villefort .title-image {
+    padding: 7% 13%;
+    float: right; 
+    margin-top: -130px;
+}
+
+section .Rochelle .title-image img {
+    /* Modifie les pixels en hauteur */
+    height: 300px;
+    /* Modifie les pixels en largeur */
+    width: 400px;
+    /* Avoir des sommets arrondies */
+    border-radius: 10px;
+}
+
+section .Rousses .title-image img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+section .Saint-Antheme .title-image img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+section .Villefort .title-image img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+section .title-image a {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #00ab66;
+    background-color: #333;
+    padding: 4px;
+    width: 100px;
+    justify-content: center;
 }

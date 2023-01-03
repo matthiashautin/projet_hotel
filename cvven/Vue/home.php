@@ -16,7 +16,37 @@
     <div class="title-page">
         <h1>Bonjour et bienvenue sur Cassidy Hotel</h1>
     </div>
-    
+    <section>
+        <div class="Rochelle">
+            <div class="title-image">
+                <h3>La Rochelle (Charente-Maritime)</h3>
+                <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
+                <a href="*">Réserver</a>
+            </div>
+            
+        </div>
+        <div class="Rousses">
+            <div class="title-image">
+                <h3>Les Rousses (Jura)</h3>
+                <img src="../Image/Hotel Les Rousses (Jura).jpg" alt="LesRousses">
+                <a href="*">Réserver</a>
+            </div>
+        </div>
+        <div class="Saint-Antheme">
+            <div class="title-image">
+                <h3>Saint-Anthème (Puy-de-Dôme)</h3>
+                <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" alt="SaintAntheme">
+                <a href="*">Réserver</a>
+            </div>
+        </div>
+        <div class="Villefort">
+            <div class="title-image">
+                <h3>Villefort (Lozère)</h3>
+                <img src="../Image/Hotel Villefort (Lozère).jpg" alt="Villefort">
+                <a href="*">Réserver</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
 </html>

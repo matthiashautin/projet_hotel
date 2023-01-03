@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/user.css">
 </head>
 <body>
+    <?php include 'header.php' ?>
     <div class="title-page">
         <h1>Bonjour et bienvenue sur Cassidy Hotel</h1>
     </div>
@@ -21,7 +22,9 @@
             <div class="title-image">
                 <h3>La Rochelle (Charente-Maritime)</h3>
                 <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
-                <a href="*">Réserver</a>
+                <div class="link">
+                    <a href="*">Réserver</a>
+                </div>
             </div>
             
         </div>
@@ -29,21 +32,27 @@
             <div class="title-image">
                 <h3>Les Rousses (Jura)</h3>
                 <img src="../Image/Hotel Les Rousses (Jura).jpg" alt="LesRousses">
-                <a href="*">Réserver</a>
+                <div class="link">
+                    <a href="*">Réserver</a>
+                </div>
             </div>
         </div>
         <div class="Saint-Antheme">
             <div class="title-image">
                 <h3>Saint-Anthème (Puy-de-Dôme)</h3>
                 <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" alt="SaintAntheme">
-                <a href="*">Réserver</a>
+                <div class="link">
+                    <a href="*">Réserver</a>
+                </div>
             </div>
         </div>
         <div class="Villefort">
             <div class="title-image">
                 <h3>Villefort (Lozère)</h3>
                 <img src="../Image/Hotel Villefort (Lozère).jpg" alt="Villefort">
-                <a href="*">Réserver</a>
+                <div class="link">
+                    <a href="*" target="_blank">Réserver</a>
+                </div>
             </div>
         </div>
     </section>
@@ -53,7 +62,7 @@
 
 
 
-<section class="projets" id="projets">
+<!-- <section class="projets" id="projets">
 
    <h1 class="heading" data-aos="fade-up"> <span>Projets / tps</span> </h1>
 
@@ -71,7 +80,7 @@
          <div class="code">
             <a href="https://github.com/matthiashautin/Airbnb/tree/master" target="_blank"><h2>Code Source</h2></a>
          </div>
-      </div>
+      </div> -->
 
 
 

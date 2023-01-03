@@ -45,6 +45,7 @@ header#sidebar .hamburger {
     top: 2rem;
     padding: 15px;
     border-radius: 11px;
+    cursor: pointer;
 }
 
 header#sidebar .hamburger .top,   

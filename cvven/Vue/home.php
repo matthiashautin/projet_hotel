@@ -23,7 +23,7 @@
                 <h3>La Rochelle (Charente-Maritime)</h3>
                 <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
                 <div class="link">
-                    <a href="*">Réserver</a>
+                    <a href="./login.php">Réserver</a>
                 </div>
             </div>
             
@@ -33,7 +33,7 @@
                 <h3>Les Rousses (Jura)</h3>
                 <img src="../Image/Hotel Les Rousses (Jura).jpg" alt="LesRousses">
                 <div class="link">
-                    <a href="*">Réserver</a>
+                    <a href="./login.php">Réserver</a>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 <h3>Saint-Anthème (Puy-de-Dôme)</h3>
                 <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" alt="SaintAntheme">
                 <div class="link">
-                    <a href="*">Réserver</a>
+                    <a href="./login.php">Réserver</a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                 <h3>Villefort (Lozère)</h3>
                 <img src="../Image/Hotel Villefort (Lozère).jpg" alt="Villefort">
                 <div class="link">
-                    <a href="*" target="_blank">Réserver</a>
+                    <a href="./login.php" target="_blank">Réserver</a>
                 </div>
             </div>
         </div>

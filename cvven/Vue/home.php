@@ -1,6 +1,6 @@
 <?php
     require_once "../Controleur/conn_db.php";
-    include "../Controleur/connectuser.php";
+    //include "../Controleur/connectuser.php";
 ?>
 
 <!DOCTYPE html>

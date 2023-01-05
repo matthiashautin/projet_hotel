@@ -29,10 +29,12 @@ if (isset($_POST['Connexion'])) {
             $_SESSION['admin_id'] = $rows['ID'];
             $message = 'Connexion réussi admin';
             header('location:../Vue/admin_res.php');
+
         } else if ($rows['users_type'] == 'user') {
 
             session_start();
             $_SESSION['user_id'] = $rows['ID'];
+            $_SESSION['ID'] = $rows['ID'];
             $_SESSION['Nom'] = $rows['Nom'];
             $_SESSION['Prenom'] = $rows['Prenom'];
             $message = 'Connexion réussi user';

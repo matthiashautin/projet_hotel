@@ -34,7 +34,7 @@ if (isset($_POST['Connexion'])) {
                 $_SESSION['user_id'] = $rows['ID'];
                 $message = 'Connexion réussi user';
                 header('location:../Vue/home.php');
-            
+
         } else {
             $message = "Impossible de se connecter vérifier vos identifiant. ❌";
     }

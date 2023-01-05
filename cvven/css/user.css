@@ -140,3 +140,7 @@ section .title-image a:hover {
     justify-content: center;
     text-align: center;
 }
+
+p {
+    margin-right: 50px;
+}

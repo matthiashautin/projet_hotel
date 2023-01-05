@@ -8,13 +8,13 @@
         foreach ($db->query($sql) as $row) {
         ?>
             <tr>
-                <td><?php echo $row['ID']; ?></td>
-                <td><?php echo $row['nomanim']; ?></td>
-                <td><?php echo $row['Vacances_Scolaire']; ?></td>
-                <td><?php echo $row['Hors_Vacances_Scolaire']; ?></td>
+                <td><?php echo htmlspecialchars($row['ID']); ?></td>
+                <td><?php echo htmlspecialchars($row['nomanim']); ?></td>
+                <td><?php echo htmlspecialchars($row['Vacances_Scolaire']); ?></td>
+                <td><?php echo htmlspecialchars($row['Hors_Vacances_Scolaire']); ?></td>
                 <td class="td-edit-delete">
-                    <a href="#edit_<?php echo $row['ID']; ?>" class="btn-edit" data-bs-toggle="modal"> Modifier</a>
-                    <a href="#delete_<?php echo $row['ID']; ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a>
+                    <a href="#edit_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-edit" data-bs-toggle="modal"> Modifier</a>
+                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a>
                 </td>
                 <?php include('../Vue/animation/edit_delete_animation.php'); ?>
             </tr>

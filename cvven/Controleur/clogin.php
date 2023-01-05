@@ -24,6 +24,8 @@ if (isset($_POST['Connexion'])) {
         if ($rows['users_type'] == 'admin') {
 
             session_start();
+            /* Dans cette partie, on dit que si l'ID correspond au même ID d'un admin, on le redirige vers la page admin_res.php sinon si l'ID 
+            correspond au même ID d'un User, on le redirige vers la page home.php sinon on ne peut pas se login car l'ID n'existe pas */
             $_SESSION['admin_id'] = $rows['ID'];
             $message = 'Connexion réussi admin';
             header('location:../Vue/admin_res.php');

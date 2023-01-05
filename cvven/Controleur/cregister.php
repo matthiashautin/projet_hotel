@@ -3,6 +3,7 @@
 require_once "../Controleur/conn_db.php";
 
 $database = new Connection();
+/* On ouvre la BDD */
 $db = $database->open();
 
 if (isset($_POST['Envoyer'])) {

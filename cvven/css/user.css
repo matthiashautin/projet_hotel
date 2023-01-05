@@ -32,11 +32,13 @@ header {
     background-color: #666;
     margin: 0 0 15px 0;
     padding: 0 0 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 header img {
-    height: 120px;
-    width: 170px;
+    width: 100px;
     border-radius: 60px;
     margin: 15px 0 0 25px;
 }
@@ -61,30 +63,31 @@ section .title-image h3 {
     color: var(--white-light);
     text-align: center;
     margin-bottom: 3px;
+    font-weight: 500;
 }
 
 section .Rochelle .title-image {
     /* Permet de laisser de la marge pa rapport à l'élément */
-    padding: 7% 13%;
+    padding: 7% 14%;
     /* Permet de mettre un élément flottant à gauche */
     float: left;
 }
 
 section .Rousses .title-image {
-    padding: 7% 13%;
+    padding: 7% 14%;
     /* Permet de mettre un élément flottant à droite */
     float: right;
 }
 
 section .Saint-Antheme .title-image {
-    padding: 7% 13%;
+    padding: 7% 14%;
     float: left;
     /* Permet de laisser de la marge par rapport au top (haut de la page) */
     margin-top: -130px;
 }
 
 section .Villefort .title-image {
-    padding: 7% 13%;
+    padding: 7% 14%;
     float: right; 
     margin-top: -130px;
 }
@@ -127,6 +130,7 @@ section .title-image a {
     width: 120px;
     border-radius: 4px;
     justify-content: center;
+    margin-top: .5rem;
 }
 
 section .title-image a:hover {
@@ -191,4 +195,114 @@ p {
 
 .btn-co:hover {
     background-color:  #02804d;
+}
+
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 5rem auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.btn-hotel-voirplus {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 12px;
+    margin: -5rem auto -2rem auto ;
+    width: 20rem;
+}
+
+.text {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    transition: .2s;
+}
+
+.text:hover {
+    background-color:var(--green1);
+    color: #fff;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
 }

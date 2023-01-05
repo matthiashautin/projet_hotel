@@ -11,7 +11,6 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
 
 ?>
 
-
 <header>
     <img src="../Image/hotel.png" alt="logo">
     <h4 class="name-user">

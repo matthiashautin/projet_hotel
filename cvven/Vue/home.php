@@ -1,5 +1,6 @@
 <?php
     require_once "../Controleur/conn_db.php";
+    include '../Controleur/cheader.php' 
 ?>
 
 <!DOCTYPE html>
@@ -12,14 +13,54 @@
     <link rel="stylesheet" href="../css/user.css">
 </head>
 <body>
-    <?php include 'header.php' ?>
+
     <div class="title-page">
-        <h1>Bonjour et bienvenue sur Cassidy Hotel</h1>
+        <h1>Biencvenue sur nos hotel cassidy</h1>
     </div>
+       
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" style="width:100%">
+  <div class="btn-hotel-voirplus"><a href="./login.php" class="text">La Rochelle (Charente Maritime)</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="../Image/Hotel Les Rousses (Jura).jpg" style="width:100%">
+  <div class="btn-hotel-voirplus"><a href="./login.php" class="text">Les Rousses (Jura)</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" style="width:100%">
+  <div class="btn-hotel-voirplus"><a href="./login.php" class="text">Saint-Anthème (Puy de Dôme)</a></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="../Image/Hotel Villefort (Lozère).jpg" style="width:100%">
+  <div class="btn-hotel-voirplus"><a href="./login.php" class="text">Villefort (Lozère)</a></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"><</a>
+<a class="next" onclick="plusSlides(1)">></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
     <section>
         <div class="Rochelle">
             <div class="title-image">
-                <h3>La Rochelle (Charente-Maritime)</h3>
+                <h3>La Rochelle (Charente Maritime)</h3>
                 <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
                 <div class="link">
                     <a href="./login.php">Réserver</a>
@@ -38,7 +79,7 @@
         </div>
         <div class="Saint-Antheme">
             <div class="title-image">
-                <h3>Saint-Anthème (Puy-de-Dôme)</h3>
+                <h3>Saint-Anthème (Puy de Dôme)</h3>
                 <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" alt="SaintAntheme">
                 <div class="link">
                     <a href="./login.php">Réserver</a>
@@ -55,6 +96,12 @@
             </div>
         </div>
     </section>
+ 
+
+<script>
+<?php
+include "../js/image_slide.js"
+?>
+</script>
 </body>
-</html>
 </html>

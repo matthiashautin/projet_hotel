@@ -5,7 +5,7 @@ CREATE TABLE Client (
     telephone INT(20) NOT NULL UNIQUE,
     mail VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(50) NOT NULL  
-    user_type varchar(20) NOT NULL DEFAULT 'user',
+    user_type varchar(20) NOT NULL DEFAULT 'user'
 );
 
 CREATE TABLE Restauration (
@@ -35,8 +35,8 @@ CREATE TABLE Animation (
 
 CREATE TABLE Region {
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    Nom_Region VARCHAR(50),
-}
+    Nom_Region VARCHAR(50)
+};
 
 CREATE TABLE Reservation (
     Hebergement_ID INT,

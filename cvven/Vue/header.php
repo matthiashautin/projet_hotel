@@ -5,7 +5,7 @@ session_start();
 $database = new Connection();
 $db = $database->open();
 
-$nom = isset($_SESSION['Nom']) ? $_SESSION['Nom'] : 'Erreur';
+$nom = isset($_SESSION['Nom']) ? $_SESSION['Nom'] : 'Errreur';
 $prenom = isset($_SESSION['Nom']) ? $_SESSION['Nom'] : 'Erreur';
 /*if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     echo "Welcome to the member's area, " . $_SESSION['Nom'] . "!";

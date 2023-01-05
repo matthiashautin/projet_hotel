@@ -68,7 +68,7 @@
                     </a>
                 </li1>
                 <li1>
-                    <a href="../Controleur/clogout.php" class='<?=$logout?>'>
+                    <a href="../Controleur/clogout_admin.php" class='<?=$logout?>'>
                         <h4>Logout</h4>
                     </a>
                 </li1>   

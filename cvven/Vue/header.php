@@ -11,20 +11,26 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
 
 ?>
 
+
 <header>
     <img src="../Image/hotel.png" alt="logo">
     <h4 class="name-user">
-        <p>Bonjour, <?php 
-        if (isset($_SESSION['ID'])) {
-
-            echo $nom . " " . $prenom;
-            echo "<a href='../Controleur/clogout_user.php'>logout</a>";
-
-         } else {
-            echo 'Vous etes pas connecté';
-            echo "<a href='login.php'>login</a>";
-
-         }
-        ?></p>
+        <p>Bonjour, 
+            <?php
+                if (isset($_SESSION['ID'])) {
+                    echo $nom . " " . $prenom;?>
+                    <div class=btn-deco-co> 
+                        <a class="btn-deco" href='../Controleur/clogout_user.php'>Déconnexion</a>
+                    </div>
+            <?php
+                } else {
+                    echo "Vous n'êtes pas connecté";?>
+                    <div class=btn-deco-co> 
+                        <a class="btn-co" href='login.php'>Connectez-vous</a>
+                    </div>
+            <?php
+                }
+            ?>
+        </p>
     </h4>
 </header>

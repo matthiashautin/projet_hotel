@@ -142,5 +142,53 @@ section .title-image a:hover {
 }
 
 p {
-    margin-right: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+/*-_-*-_-*-_-*-_-*-_-*-_-*   btns pour conn-déconn   *-_-*-_-*-_-*-_-*-_-*-_-*/
+
+.btn-deco-co {
+    display: flex;
+    justify-content: right;
+}
+
+/*-_-*-_-*-_-*-_-*-_-*-_-*   btn pour déconnexion   *-_-*-_-*-_-*-_-*-_-*-_-*/
+
+.btn-deco {
+    display: flex;
+    justify-content: center;
+    background-color: var(--red1);
+    border: 2px outset #fff;
+    border-radius: 20px;
+    width: 10rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: .2s;
+}
+
+.btn-deco:hover {
+    background-color: #9e1a0b;
+}
+
+/*-_-*-_-*-_-*-_-*-_-*-_-*   btn pour connexion   *-_-*-_-*-_-*-_-*-_-*-_-*/
+
+.btn-co {
+    display: flex;
+    justify-content: center;
+    background-color: var(--green1);
+    border: 2px outset #fff;
+    border-radius: 20px;
+    width: 10rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: .2s;
+}
+
+.btn-co:hover {
+    background-color:  #02804d;
 }

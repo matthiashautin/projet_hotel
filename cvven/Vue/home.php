@@ -14,9 +14,7 @@
 </head>
 <body>
 
-    <div class="title-page">
-        <h1>Biencvenue sur nos hotel cassidy</h1>
-    </div>
+
        
 <div class="slideshow-container">
 

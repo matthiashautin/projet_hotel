@@ -29,6 +29,7 @@ body  {
 }
 
 header {
+    top: 0;
     background-color: #666;
     margin: 0 0 15px 0;
     padding: 0 0 15px 0;
@@ -38,9 +39,10 @@ header {
 }
 
 header img {
-    width: 100px;
+    width: 134px;
     border-radius: 60px;
     margin: 15px 0 0 25px;
+    filter: invert(20%);
 }
 
 header h4 {
@@ -50,6 +52,8 @@ header h4 {
 }
 
 .title-page {
+    position: relative;
+    font-size: .5rem;
     font-family: 'Poppins', sans-serif;
     color: var(--white);
     /* Place le text au centre de la page */
@@ -212,6 +216,7 @@ img {vertical-align: middle;}
     max-width: 1000px;
     position: relative;
     margin: 5rem auto;
+    top: 5rem;
 }
 
 /* Next & previous buttons */
@@ -247,7 +252,7 @@ img {vertical-align: middle;}
     justify-content: center;
     text-align: center;
     padding: 8px 12px;
-    margin: -5rem auto -2rem auto ;
+    margin: -5rem auto 6rem auto ;
     width: 20rem;
 }
 

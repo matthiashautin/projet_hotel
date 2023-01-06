@@ -75,12 +75,16 @@ section .Rochelle .title-image {
     padding: 7% 14%;
     /* Permet de mettre un élément flottant à gauche */
     float: left;
+    margin-top: -130px;
+
 }
 
 section .Rousses .title-image {
     padding: 7% 14%;
     /* Permet de mettre un élément flottant à droite */
     float: right;
+    margin-top: -130px;
+
 }
 
 section .Saint-Antheme .title-image {
@@ -290,6 +294,8 @@ img {vertical-align: middle;}
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
 }
 
 .active, .dot:hover {

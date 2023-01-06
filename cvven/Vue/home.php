@@ -1,6 +1,6 @@
 <?php
     require_once "../Controleur/conn_db.php";
-    include '../Controleur/cheader.php' 
+    include '../Controleur/cheader.php';
 ?>
 
 <!DOCTYPE html>
@@ -60,9 +60,7 @@
             <div class="title-image">
                 <h3>La Rochelle (Charente Maritime)</h3>
                 <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
-                <div class="link">
-                    <a href="./login.php">Réserver</a>
-                </div>
+            <?php require '../Controleur/cmain.php'; ?>
             </div>
             
         </div>
@@ -70,27 +68,21 @@
             <div class="title-image">
                 <h3>Les Rousses (Jura)</h3>
                 <img src="../Image/Hotel Les Rousses (Jura).jpg" alt="LesRousses">
-                <div class="link">
-                    <a href="./login.php">Réserver</a>
-                </div>
+                <?php require '../Controleur/cmain.php'; ?>
             </div>
         </div>
         <div class="Saint-Antheme">
             <div class="title-image">
                 <h3>Saint-Anthème (Puy de Dôme)</h3>
                 <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" alt="SaintAntheme">
-                <div class="link">
-                    <a href="./login.php">Réserver</a>
-                </div>
+                <?php require '../Controleur/cmain.php'; ?>
             </div>
         </div>
         <div class="Villefort">
             <div class="title-image">
                 <h3>Villefort (Lozère)</h3>
                 <img src="../Image/Hotel Villefort (Lozère).jpg" alt="Villefort">
-                <div class="link">
-                    <a href="./login.php" target="_blank">Réserver</a>
-                </div>
+                <?php require '../Controleur/cmain.php'; ?>
             </div>
         </div>
     </section>

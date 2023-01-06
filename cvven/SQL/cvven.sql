@@ -53,3 +53,5 @@ CREATE TABLE Reservation (
     CONSTRAINT FK_ReservationRegion FOREIGN KEY (Region_ID) REFERENCES Region(ID),
     PRIMARY KEY (Hebergement_ID, Client_ID, Restauration_ID, Animation_ID, Region_ID, DateDebut, DateFin)
 );
+
+

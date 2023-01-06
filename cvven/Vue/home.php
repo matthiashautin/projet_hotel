@@ -1,6 +1,9 @@
 <?php
     require_once "../Controleur/conn_db.php";
     include '../Controleur/cheader.php';
+
+$id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
+
 ?>
 
 <!DOCTYPE html>
@@ -13,33 +16,79 @@
     <link rel="stylesheet" href="../css/user.css">
 </head>
 <body>
-
-
-       
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 4</div>
   <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" style="width:100%">
-  <div class="btn-hotel-voirplus"><a href="./login.php" class="text">La Rochelle (Charente Maritime)</a></div>
+    <?php
+    if (isset($_SESSION['ID'])) { ?>
+        <div class="btn-hotel-voirplus">
+            <a href="./reservation.php" class="text">La Rochelle (Charente Maritime)</a>
+        </div>
+    <?php
+    } else { ?>
+        <div class="btn-hotel-voirplus">
+            <a href="./login.php" class="text">La Rochelle (Charente Maritime)</a>
+        </div>
+    <?php
+    }
+    ?>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 4</div>
   <img src="../Image/Hotel Les Rousses (Jura).jpg" style="width:100%">
-  <div class="btn-hotel-voirplus"><a href="./login.php" class="text">Les Rousses (Jura)</a></div>
+  <?php
+    if (isset($_SESSION['ID'])) { ?>
+        <div class="btn-hotel-voirplus">
+            <a href="./reservation.php" class="text">Les Rousses (Jura)</a>
+        </div>
+    <?php
+    } else { ?>
+        <div class="btn-hotel-voirplus">
+            <a href="./login.php" class="text">Les Rousses (Jura)</a>
+        </div>
+    <?php
+    }
+    ?>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 4</div>
   <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" style="width:100%">
-  <div class="btn-hotel-voirplus"><a href="./login.php" class="text">Saint-Anthème (Puy de Dôme)</a></div>
+  <?php
+    if (isset($_SESSION['ID'])) { ?>
+        <div class="btn-hotel-voirplus">
+            <a href="./reservation.php" class="text">Saint-Anthème (Puy de Dôme)</a>
+        </div>
+    <?php
+    } else { ?>
+        <div class="btn-hotel-voirplus">
+            <a href="./login.php" class="text">Saint-Anthème (Puy de Dôme)</a>
+        </div>
+    <?php
+    }
+    ?>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 4</div>
   <img src="../Image/Hotel Villefort (Lozère).jpg" style="width:100%">
-  <div class="btn-hotel-voirplus"><a href="./login.php" class="text">Villefort (Lozère)</a></div>
+  <div class="btn-hotel-voirplus"><a href="./login.php" class="text"></a></div>
+  <?php
+    if (isset($_SESSION['ID'])) { ?>
+        <div class="btn-hotel-voirplus">
+            <a href="./reservation.php" class="text">Villefort (Lozère)</a>
+        </div>
+    <?php
+    } else { ?>
+        <div class="btn-hotel-voirplus">
+            <a href="./login.php" class="text">Villefort (Lozère)</a>
+        </div>
+    <?php
+    }
+    ?>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)"><</a>

@@ -8,8 +8,8 @@ $db = $database->open();
 
 if (isset($_POST['Envoyer'])) {
     try {
-        $conn = new PDO("mysql:host=$db_servername;dbname=$db_name", $db_username, $db_pass);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $database = new Connection();
+        $db = $database->open();
         
         $nom = $_POST['Nom'];
         $prenom = $_POST['Prenom'];
@@ -19,10 +19,10 @@ if (isset($_POST['Envoyer'])) {
         $cpassword = md5($_POST['cpassword']);
 
         
-        $vtelephone = $conn->prepare("SELECT * FROM `Client` WHERE telephone = ?");
+        $vtelephone = $db->prepare("SELECT * FROM `Client` WHERE telephone = ?");
         $vtelephone->execute([$telephone]);
 
-        $vmail = $conn->prepare("SELECT * FROM `Client` WHERE mail = ?");
+        $vmail = $db->prepare("SELECT * FROM `Client` WHERE mail = ?");
         $vmail->execute([$mail]);
      
         if($vtelephone->rowCount() > 0){
@@ -34,7 +34,7 @@ if (isset($_POST['Envoyer'])) {
                 $message = 'Les 2 mots de passe sont différents ! ❌';
                 }else {
                     $sql = ("INSERT INTO `Client`(`Nom`, `Prenom`, `telephone`, `mail`, `password`) VALUES ('$nom','$prenom','$telephone', '$mail','$password')");
-                    $stmt = $conn->prepare($sql);
+                    $stmt = $db->prepare($sql);
                     $stmt->bindParam('Nom', $nom);
                     $stmt->bindParam('Prenom', $prenom);
                     $stmt->bindParam('telephone', $telephone);

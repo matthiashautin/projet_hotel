@@ -146,11 +146,11 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                 if (isset($_SESSION['ID'])) { ?>
                     <div class="btn-hotel-voirplus">
                         <?php
-                            $rows= $db->query('SELECT * FROM Region WHERE ID="5"');
+                            $rows= $db->query('SELECT * FROM Region WHERE Nom_Region="La Rochelle (Charente-Maritime)"');
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td></td>Reserve</a></td>
+                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."' class='text' <td></td>Reserve</a></td>
                                 </tr>";
                         }
                     ?>
@@ -169,17 +169,17 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
         </div>
         <div class="Rousses">
         <div class="title-image">
-                <h3>La Rochelle (Charente Maritime)</h3>
-                <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
+                <h3>Les Rousses (Jura)</h3>
+                <img src="../Image/Hotel Les Rousses (Jura).jpg" alt="LesRousses">
                 <?php
                 if (isset($_SESSION['ID'])) { ?>
                     <div class="btn-hotel-voirplus">
                         <?php
-                            $rows= $db->query('SELECT * FROM Region WHERE ID="4"');
+                            $rows= $db->query('SELECT * FROM Region WHERE Nom_region="Les Rousses (Jura)"');
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td></td>Reserve</a></td>
+                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."' class='text' <td></td>Reserve</a></td>
                                 </tr>";
                         }
                     ?>
@@ -199,17 +199,17 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
         </div>
         <div class="Saint-Antheme">
         <div class="title-image">
-                <h3>La Rochelle (Charente Maritime)</h3>
-                <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
+                <h3>Saint-Anthème (Puy-de-Dôme)</h3>
+                <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" alt="SaintAnthème">
                 <?php
                 if (isset($_SESSION['ID'])) { ?>
                     <div class="btn-hotel-voirplus">
                         <?php
-                            $rows= $db->query('SELECT * FROM Region WHERE ID="6"');
+                            $rows= $db->query('SELECT * FROM Region WHERE Nom_Region="Saint-Anthème (Puy-de-Dôme)"');
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td></td>Reserve</a></td>
+                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."' class='text' <td></td>Reserve</a></td>
                                 </tr>";
                         }
                     ?>
@@ -228,17 +228,17 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
         </div>
         <div class="Villefort">
         <div class="title-image">
-                <h3>La Rochelle (Charente Maritime)</h3>
-                <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
+                <h3>Villefort (Lozère)</h3>
+                <img src="../Image/Hotel Villefort (Lozère).jpg" alt="VilleFort">
                 <?php
                 if (isset($_SESSION['ID'])) { ?>
                     <div class="btn-hotel-voirplus">
                         <?php
-                            $rows= $db->query('SELECT * FROM Region WHERE ID="7"');
+                            $rows= $db->query('SELECT * FROM Region WHERE Nom_Region="Villefort (Lozère)"');
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td></td>Reserve</a></td>
+                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."' class='text' <td></td>Reserve</a></td>
                                 </tr>";
                         }
                     ?>

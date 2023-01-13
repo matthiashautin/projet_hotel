@@ -92,9 +92,8 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
             ?>
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">
-            < </a>
-                <a class="next" onclick="plusSlides(1)">></a>
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
 
     </div>
     <br>

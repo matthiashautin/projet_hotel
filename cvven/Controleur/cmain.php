@@ -17,5 +17,4 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
         </div>
     <?php
     }
-
 ?>

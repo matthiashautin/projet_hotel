@@ -24,9 +24,17 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
             <div class="numbertext">1 / 4</div>
             <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" style="width:100%">
             <?php
-            if (isset($_SESSION['ID'])) { ?>
-                <div class="btn-hotel-voirplus">
-                    <a href="./reservation.php" class="text">La Rochelle (Charente Maritime)</a>
+                if (isset($_SESSION['ID'])) { ?>
+                    <div class="btn-hotel-voirplus">
+                        <?php
+                            $rows= $db->query('SELECT * FROM Region WHERE ID="5"');
+                        //var_dump($rows);
+                        foreach ( $rows as $row) {
+                            echo "<tr>
+                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                </tr>";
+                        }
+                    ?>
                 </div>
             <?php
             } else { ?>
@@ -42,9 +50,17 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
             <div class="numbertext">2 / 4</div>
             <img src="../Image/Hotel Les Rousses (Jura).jpg" style="width:100%">
             <?php
-            if (isset($_SESSION['ID'])) { ?>
-                <div class="btn-hotel-voirplus">
-                    <a href="./reservation.php" class="text">Les Rousses (Jura)</a>
+                if (isset($_SESSION['ID'])) { ?>
+                    <div class="btn-hotel-voirplus">
+                        <?php
+                            $rows= $db->query('SELECT * FROM Region WHERE ID="4"');
+                        //var_dump($rows);
+                        foreach ( $rows as $row) {
+                            echo "<tr>
+                                <td><a href='reservation.php?id".$row["ID"]."' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                </tr>";
+                        }
+                    ?>
                 </div>
             <?php
             } else { ?>
@@ -60,9 +76,17 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
             <div class="numbertext">3 / 4</div>
             <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" style="width:100%">
             <?php
-            if (isset($_SESSION['ID'])) { ?>
-                <div class="btn-hotel-voirplus">
-                    <a href="./reservation.php" class="text">Saint-Anthème (Puy de Dôme)</a>
+                if (isset($_SESSION['ID'])) { ?>
+                    <div class="btn-hotel-voirplus">
+                        <?php
+                            $rows= $db->query('SELECT * FROM Region WHERE ID="6"');
+                        //var_dump($rows);
+                        foreach ( $rows as $row) {
+                            echo "<tr>
+                                <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                </tr>";
+                        }
+                    ?>
                 </div>
             <?php
             } else { ?>
@@ -78,9 +102,17 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
             <div class="numbertext">4 / 4</div>
             <img src="../Image/Hotel Villefort (Lozère).jpg" style="width:100%">
             <?php
-            if (isset($_SESSION['ID'])) { ?>
-                <div class="btn-hotel-voirplus">
-                    <a href="./reservation.php" class="text">Villefort (Lozère)</a>
+                if (isset($_SESSION['ID'])) { ?>
+                    <div class="btn-hotel-voirplus">
+                        <?php
+                            $rows= $db->query('SELECT * FROM Region WHERE ID="7"');
+                        //var_dump($rows);
+                        foreach ( $rows as $row) {
+                            echo "<tr>
+                                <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                </tr>";
+                        }
+                    ?>
                 </div>
             <?php
             } else { ?>
@@ -110,31 +142,118 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
             <div class="title-image">
                 <h3>La Rochelle (Charente Maritime)</h3>
                 <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
-                <?php require '../Controleur/cmain.php'; ?>
+                <?php
+                if (isset($_SESSION['ID'])) { ?>
+                    <div class="btn-hotel-voirplus">
+                        <?php
+                            $rows= $db->query('SELECT * FROM Region WHERE ID="5"');
+                        //var_dump($rows);
+                        foreach ( $rows as $row) {
+                            echo "<tr>
+                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td></td>Reserve</a></td>
+                                </tr>";
+                        }
+                    ?>
+                </div>
+            <?php
+            } else { ?>
+                <div class="btn-hotel-voirplus">
+                    <a href="./login.php" class="text">Reserve</a>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
             </div>
 
         </div>
         <div class="Rousses">
-            <div class="title-image">
-                <h3>Les Rousses (Jura)</h3>
-                <img src="../Image/Hotel Les Rousses (Jura).jpg" alt="LesRousses">
-                <?php require '../Controleur/cmain.php'; ?>
+        <div class="title-image">
+                <h3>La Rochelle (Charente Maritime)</h3>
+                <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
+                <?php
+                if (isset($_SESSION['ID'])) { ?>
+                    <div class="btn-hotel-voirplus">
+                        <?php
+                            $rows= $db->query('SELECT * FROM Region WHERE ID="4"');
+                        //var_dump($rows);
+                        foreach ( $rows as $row) {
+                            echo "<tr>
+                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td></td>Reserve</a></td>
+                                </tr>";
+                        }
+                    ?>
+                </div>
+            <?php
+            } else { ?>
+                <div class="btn-hotel-voirplus">
+                    <a href="./login.php" class="text">Reserve</a>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
+            </div>
+
             </div>
         </div>
         <div class="Saint-Antheme">
-            <div class="title-image">
-                <h3>Saint-Anthème (Puy de Dôme)</h3>
-                <img src="../Image/Hotel Saint-Anthème (Puy-de-Dôme).jpg" alt="SaintAntheme">
-                <?php require '../Controleur/cmain.php'; ?>
+        <div class="title-image">
+                <h3>La Rochelle (Charente Maritime)</h3>
+                <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
+                <?php
+                if (isset($_SESSION['ID'])) { ?>
+                    <div class="btn-hotel-voirplus">
+                        <?php
+                            $rows= $db->query('SELECT * FROM Region WHERE ID="6"');
+                        //var_dump($rows);
+                        foreach ( $rows as $row) {
+                            echo "<tr>
+                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td></td>Reserve</a></td>
+                                </tr>";
+                        }
+                    ?>
+                </div>
+            <?php
+            } else { ?>
+                <div class="btn-hotel-voirplus">
+                    <a href="./login.php" class="text">Reserve</a>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
             </div>
+
         </div>
         <div class="Villefort">
-            <div class="title-image">
-                <h3>Villefort (Lozère)</h3>
-                <img src="../Image/Hotel Villefort (Lozère).jpg" alt="Villefort">
-                <?php require '../Controleur/cmain.php'; ?>
-            </div>
+        <div class="title-image">
+                <h3>La Rochelle (Charente Maritime)</h3>
+                <img src="../Image/Hotel La Rochelle (Charente-Maritime).jpg" alt="LaRochelle">
+                <?php
+                if (isset($_SESSION['ID'])) { ?>
+                    <div class="btn-hotel-voirplus">
+                        <?php
+                            $rows= $db->query('SELECT * FROM Region WHERE ID="7"');
+                        //var_dump($rows);
+                        foreach ( $rows as $row) {
+                            echo "<tr>
+                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td></td>Reserve</a></td>
+                                </tr>";
+                        }
+                    ?>
+                </div>
+            <?php
+            } else { ?>
+                <div class="btn-hotel-voirplus">
+                    <a href="./login.php" class="text">Reserve</a>
+                </div>
+            <?php
+            }
+            ?>
         </div>
+            </div>
+
     </section>
 
 

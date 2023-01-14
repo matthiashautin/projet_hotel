@@ -31,7 +31,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                    <td><a href='reservation.php?id=".$row["ID"]."&region=LaRochelle' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
                                 </tr>";
                         }
                     ?>
@@ -57,7 +57,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                <td><a href='reservation.php?id".$row["ID"]."' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                <td><a href='reservation.php?id".$row["ID"]."&region=LesRousses' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
                                 </tr>";
                         }
                     ?>
@@ -83,7 +83,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                <td><a href='reservation.php?id=".$row["ID"]."&region=SaintAnthème' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
                                 </tr>";
                         }
                     ?>
@@ -109,7 +109,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                <td><a href='reservation.php?id=".$row["ID"]."' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                <td><a href='reservation.php?id=".$row["ID"]."&region=Villefort' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
                                 </tr>";
                         }
                     ?>
@@ -150,7 +150,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."' class='text' <td></td>Reserve</a></td>
+                                    <td><a href='reservation.php?id=".$row["ID"]."&region=LaRochelle' class='text' <td></td>Reserve</a></td>
                                 </tr>";
                         }
                     ?>
@@ -179,7 +179,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."' class='text' <td></td>Reserve</a></td>
+                                    <td><a href='reservation.php?id=".$row["ID"]."&region=LesRousses' class='text' <td></td>Reserve</a></td>
                                 </tr>";
                         }
                     ?>
@@ -209,7 +209,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."' class='text' <td></td>Reserve</a></td>
+                                    <td><a href='reservation.php?id=".$row["ID"]."&region=SaintAnthème' class='text' <td></td>Reserve</a></td>
                                 </tr>";
                         }
                     ?>
@@ -238,7 +238,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."' class='text' <td></td>Reserve</a></td>
+                                    <td><a href='reservation.php?id=".$row["ID"]."&region=Villefort' class='text' <td></td>Reserve</a></td>
                                 </tr>";
                         }
                     ?>

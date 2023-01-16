@@ -1,4 +1,6 @@
 <?php
+include "../Controleur/connectuser.php";
+
     if((isset($_GET['region']) && $_GET['region']=="LaRochelle")){ ?>
         <main class="title-region">
             <h1>Hotel La Rochelle</h1>
@@ -26,15 +28,19 @@
 
                 } else if((isset($_GET['region']) && $_GET['region']=="Villefort")){ ?>
                     <main class="title-region">
-                <h1>Hotel Villefort</h1>
-            </main>  
-            <main class="title-p">
-                <p>(Lozère)</p>
-            </main>  
+                        <h1>Hotel Villefort</h1>
+                    </main>  
+                    <main class="title-p">
+                        <p>(Lozère)</p>
+                    </main>  
                 <?php    
 
-                    } else {
-                    
-                        header('location:./home.php');
+                    } else if((isset($_GET['region']) && $_GET['region']=="reservation")) { ?>
+                        <main class="title-region">
+                            <h1>Vos réservation</h1>
+                        </main>
+                    <?php
+                } else { 
+                    header('location:./home.php');
                 }
 ?>

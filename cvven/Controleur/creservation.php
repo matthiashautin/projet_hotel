@@ -40,6 +40,42 @@ include "../Controleur/connectuser.php";
                             <h1>Vos réservation</h1>
                         </main>
                     <?php
+                    include_once('../Controleur/conn_db.php');  
+                    $database = new Connection();
+                    $db = $database->open();
+                    $id = $_SESSION['user_id'];
+                    $reservation = "SELECT * FROM `Reservation` WHERE Client_ID='$id'";
+                    var_dump($reservation);
+
+                    if (!$reservation == null) {
+                        try{    
+                            $sql = "SELECT * FROM `Reservation` WHERE Client_ID='$id'";
+                            foreach ($db->query($sql) as $row) {
+                            ?>
+                                <tr>
+                                    <td><?php echo htmlspecialchars($row['Hebergement_ID']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['Client_ID']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['Restauration_ID']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['Animation_ID']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['Region_ID']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['DateDebut']); ?></td>
+                                    <td><?php echo htmlspecialchars($row['DateFin']); ?></td>
+                                </tr>
+                            <?php
+                            }
+                        }
+                        catch(PDOException $e){
+                            echo 'Il y a un problème de connexion :' . $e->getMessage();
+                        }
+                            //close connection
+                        $database->close();
+                    } else {
+                      echo "Vous n'avez pas de réservation";  
+                }
+                        
+                        
+
+
                 } else { 
                     header('location:./home.php');
                 }

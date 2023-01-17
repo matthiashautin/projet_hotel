@@ -17,9 +17,9 @@
           </div>
 
           <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Chambre_Doubles</label>
+            <label class="col-sm-2 col-form-label">Chambres_Doubles</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="Chambre_Doubles">
+              <input type="text" class="form-control" name="Chambres_doubles">
             </div>
           </div>
 

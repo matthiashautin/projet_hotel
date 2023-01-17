@@ -1,0 +1,32 @@
+<?php
+    include_once('../Controleur/conn_db.php');  
+
+    $database = new Connection();
+    $db = $database->open();
+    try{    
+        $sql = 'SELECT * FROM Hebergement';
+        foreach ($db->query($sql) as $row) {
+        ?>
+            <tr>
+                <td><?php echo htmlspecialchars($row['ID']); ?></td>
+                <td><?php echo htmlspecialchars($row['Logements']); ?></td>
+                <td><?php echo htmlspecialchars($row['Chambre_Doubles']); ?></td>
+                <td><?php echo htmlspecialchars($row['Chambres_3_Lits']); ?></td>
+                <td><?php echo htmlspecialchars($row['Chambres_4_Lits']); ?></td>
+                <td><?php echo htmlspecialchars($row['Logement_Handi']); ?></td>
+                <td><?php echo htmlspecialchars($row['Menage']); ?></td>
+                <td class="td-edit-delete">
+                    <a href="#edit_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-edit" data-bs-toggle="modal"> Modifier</a>
+                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a>
+                </td>
+                <?php include('../Vue/Hebergement/edit_delete_Hebergement.php'); ?>
+            </tr>
+        <?php
+        }
+    }
+    catch(PDOException $e){
+        echo 'Il y a un problème de connexion :' . $e->getMessage();
+    }
+        //close connection
+    $database->close();
+?>

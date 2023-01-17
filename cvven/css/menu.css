@@ -24,12 +24,12 @@ header#sidebar {
     height: 100vh;
     background-color: var(--black);
     min-width: 22rem;
-    transform: translateX(-100%);
+    transform: translateX(0%);
     transition: .2s;
 }
 
 header#sidebar.open-sidebar {
-    transform: translateX(0%);
+    transform: translateX(-100%);
 }
 
 header#sidebar .hamburger {
@@ -59,21 +59,36 @@ header#sidebar .hamburger .bottom {
 }
 
 header#sidebar.open-sidebar .hamburger .top {
-    transform: rotate(45deg);
+    /* transform: rotate(45deg);
     position: relative;
     top: 10px;
-    width: 37px;
+    width: 37px; */
+    width: 35px;
+    height: 5px;
+    background: #666;
+    border-radius: 5px;
+    transition: .2s;
 }
 
 header#sidebar.open-sidebar .hamburger .mid {
-    opacity: 0;
+    /* opacity: 0; */
+    width: 35px;
+    height: 5px;
+    background: #666;
+    border-radius: 5px;
+    transition: .2s;
 }
 
 header#sidebar.open-sidebar .hamburger .bottom {
-    transform: rotate(-45deg);
+    /* transform: rotate(-45deg);
     position: relative;
     top: -11px;
-    width: 37px;
+    width: 37px; */
+        width: 35px;
+    height: 5px;
+    background: #666;
+    border-radius: 5px;
+    transition: .2s;
 }
 
 

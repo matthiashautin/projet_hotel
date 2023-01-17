@@ -24,7 +24,7 @@ include "./common/menu.php";
             <div class="col-12">
                 <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#addnew">
                     Nouvelle Hebergement
-                </button>
+                </button><!--test-->
                 <?php
                     include('../Controleur/messageadmin.php');
                 ?>
@@ -35,7 +35,7 @@ include "./common/menu.php";
                     <th class="top-th">Chambres_3_Lits</th>
                     <th class="top-th">Chambres_4_Lits</th>
                     <th class="top-th">Logement_Handi</th>
-                    <th class="top-th">Ménage</th>
+                    <th class="top-th">Menage</th>
                     <th class="top-th">Action</th>
                 </thead>
                 <?php

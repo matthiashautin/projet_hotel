@@ -15,9 +15,9 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Chambre_Doubles</label>
+                        <label class="col-sm-2 col-form-label">Chambres_doubles</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Chambre_Doubles" value="<?php echo htmlspecialchars($row['Chambre_Doubles']); ?>">
+                            <input type="text" class="form-control" name="Chambres_doubles" value="<?php echo htmlspecialchars($row['Chambres_doubles']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
@@ -41,7 +41,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Ménage</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Ménage" value="<?php echo htmlspecialchars($row['Ménage']); ?>">
+                            <input type="text" class="form-control" name="Menage" value="<?php echo htmlspecialchars($row['Menage']); ?>">
                         </div>
                     </div>
             </div>

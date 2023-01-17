@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
     session_start();
     include_once('../../Controleur/conn_db.php');
     
@@ -18,7 +18,7 @@
         }
         //close connection
         $database->close();
-=======
+    }
 session_start();
 include_once('../../Controleur/conn_db.php');
 
@@ -33,7 +33,7 @@ if (isset($_POST['add'])) {
         $_SESSION['message'] = ($stmt->execute(array(':Chambres_doubles' => $_POST['Chambres_doubles'], ':Chambres_3_Lits' => $_POST['Chambres_3_Lits'], ':Chambres_4_Lits' => $_POST['Chambres_4_Lits'], ':Logement_Handi' => $_POST['Logement_Handi'], ':Ménage' => $_POST['Ménage']))) ? "Hebergement ajouté avec succès" : "Une erreur s'est produite. Impossible d'ajouter cette hebergement";
     } catch (PDOException $e) {
         $_SESSION['message'] = $e->getMessage();
->>>>>>> 02b1b0d652da2ca867640da38a732f9fb02e7240
+
     }
     //close connection
     $database->close();

@@ -76,7 +76,7 @@ include "../Controleur/connectuser.php";
                         $database->close();
                     } else  {?>
                     
-                    <!-- met une balise lorsque qu'il n'y a pas de réservation -->
+                    <!-- met une balise lorsque qu'il n'y a pas de réservation test-->
 
                       <?php
                 }

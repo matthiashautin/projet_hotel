@@ -9,6 +9,13 @@
       <div class="modal-body">
         <form method="POST" action="../Modele/admin_resto/add.php">
 
+        <div class="mb-3 row">
+              <label class="col-sm-2 col-form-label">Logements</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="Logements">
+                </div>
+            </div>
+
             <div class="mb-3 row">
               <label class="col-sm-2 col-form-label">Chambre_Doubles</label>
                 <div class="col-sm-10">
@@ -38,9 +45,9 @@
             </div>
 
             <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Ménage</label>
+              <label class="col-sm-2 col-form-label">Menage</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Ménage">
+                    <input type="text" class="form-control" name="Menage">
                 </div>
             </div>
 

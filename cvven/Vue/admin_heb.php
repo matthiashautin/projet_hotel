@@ -29,8 +29,9 @@ include "./common/menu.php";
                     include('../Controleur/messageadmin.php');
                 ?>
             <table class="table table-bordered table-striped">
-                <thead>Z
+                <thead>
                     <th class="top-th">Id</th>
+                    <th class="top-th">Logements</th>
                     <th class="top-th">Chambre_Doubles</th>
                     <th class="top-th">Chambres_3_Lits</th>
                     <th class="top-th">Chambres_4_Lits</th>

@@ -8,7 +8,13 @@
     </div>
         <div class="modal-body">
         <form method="POST" action="../Modele/admin_heb/edit.php?ID=<?php echo htmlspecialchars($row['ID']); ?>">
-            <div class="mb-3 row">
+        <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">Logements</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="Logements" value="<?php echo htmlspecialchars($row['Logements']); ?>">
+                </div>
+            </div>
+        <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Chambre_Doubles</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" name="Chambre_Doubles" value="<?php echo htmlspecialchars($row['Chambre_Doubles']); ?>">

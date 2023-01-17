@@ -14,9 +14,7 @@ include "./common/menu.php";
     <link rel="stylesheet" href="../css/admin.css">
     <title>Administration</title>
 </head>
-
 <body>
-
     <div class="container">
         <div class="title">
             <h1>Hebergement</h1>
@@ -31,7 +29,7 @@ include "./common/menu.php";
                 ?>
                 <table class="table table-bordered table-striped">
                     <thead>
-                        <th class="top-th">Id</th>
+                        <th class="top-th">ID</th>
                         <th class="top-th">Logements</th>
                         <th class="top-th">Chambres_doubles</th>
                         <th class="top-th">Chambres_3_Lits</th>
@@ -41,13 +39,13 @@ include "./common/menu.php";
                         <th class="top-th">Action</th>
                     </thead>
                     <?php
-                    include "../Modele/admin_heb/hebergement.php";
+                        include "../Modele/admin_heb/hebergement.php";
                     ?>
                 </table>
             </div>
         </div>
     </div>
-    <?php include('./Hebergement/add_hebergement.php'); ?>
+    <?php include('./hebergement/add_hebergement.php'); ?>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>

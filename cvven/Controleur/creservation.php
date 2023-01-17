@@ -55,20 +55,31 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
         try {
             $sql = "SELECT * FROM `Reservation` WHERE Client_ID='$id'";
             foreach ($db->query($sql) as $row) {
-    ?>
-                <tr>
-                    <td class="reservation-id"><?php echo htmlspecialchars($row['ID']); ?></td>
-                    <td class="reservation-id"><?php echo htmlspecialchars($row['Hebergement_ID']); ?></td>
-                    <td class="reservation-id"><?php echo htmlspecialchars($row['Client_ID']); ?></td>
-                    <td class="reservation-id"><?php echo htmlspecialchars($row['Restauration_ID']); ?></td>
-                    <td class="reservation-id"><?php echo htmlspecialchars($row['Animation_ID']); ?></td>
-                    <td class="reservation-id"><?php echo htmlspecialchars($row['Region_ID']); ?></td>
-                    <td class="reservation-id"><?php echo htmlspecialchars($row['DateDebut']); ?></td>
-                    <td class="reservation-id"><?php echo htmlspecialchars($row['DateFin']); ?></td>
-                    <td class="td-edit-delete">
-                        <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a> 
-                    </td>
-                </tr>
+    ?>        
+        <thead>
+            <th class="top-th">ID</th>
+            <th class="top-th">Id_hebergement</th>
+            <th class="top-th">Id_client</th>
+            <th class="top-th">Id_restauration</th>
+            <th class="top-th">Id_animation</th>
+            <th class="top-th">Id_region</th>
+            <th class="top-th">datedebut</th>
+            <th class="top-th">datefin</th>
+            <th class="top-th">Action</th>
+        </thead>
+            <tr>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['ID']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Hebergement_ID']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Client_ID']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Restauration_ID']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Animation_ID']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Region_ID']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['DateDebut']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['DateFin']); ?></td>
+                <td class="td-edit-delete">
+                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a> 
+                </td>
+            </tr>
         <?php
             }
         } catch (PDOException $e) {
@@ -77,9 +88,10 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
         //close connection
         $database->close();
     } else { ?>
-
-        <!-- met une balise lorsque qu'il n'y a pas de réservation test-->
-
+        <!-- lorsque qu'il n'y a pas de réservation -->
+        <div class="message">
+            <p>Vous n'avez pas de réservation</p>
+        </div>
 <?php
     }
 } else {

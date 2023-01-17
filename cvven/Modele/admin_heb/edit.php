@@ -9,12 +9,12 @@ if (isset($_POST['edit'])) {
     try {
         //création des variables 
         $id = $_GET['ID'];
-        $Pension_Complete = $_POST['Logements'];
-        $Pension_Complete = $_POST['Chambres_doubles'];
-        $Demi_Pension = $_POST['Chambres_3_Lits'];
-        $Repas_Bebe = $_POST['Chambres_4_Lits'];
-        $Pique_nique = $_POSR['Logement_Handi'];
-        $Reunions = $_POST['Menage'];
+        $Logements = $_POST['Logements'];
+        $Chambres_doubles = $_POST['Chambres_doubles'];
+        $Chambres_3_Lits = $_POST['Chambres_3_Lits'];
+        $Chambres_4_Lits = $_POST['Chambres_4_Lits'];
+        $Logement_Handi = $_POSR['Logement_Handi'];
+        $Menage = $_POST['Menage'];
 
         //preparer la sql injection pour la table animation
         $sql = "UPDATE Hebergement SET Logements = '$Logements', Chambres_doubles = '$Chambres_doubles', Chambres_3_Lits = '$Chambres_3_Lits', Chambres_4_Lits = '$Chambres_4_Lits', Logement_Handi = '$Logement_Handi', Menage = '$Menage'  WHERE ID = '$id'";
@@ -29,4 +29,6 @@ if (isset($_POST['edit'])) {
     $_SESSION['message'] = 'Remplissez en premier le formulaire de modification';
 }
 
-header('location: ../../Vue/admin_heb.php');
+    header('location: ../../Vue/admin_heb.php');
+?>
+

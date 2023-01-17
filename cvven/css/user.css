@@ -448,4 +448,8 @@ td.td-edit-delete{
     --bs-gutter-x: 17rem;
 }
 
+.message p {
+    color: white;
+    font-size: 1.5rem;
 
+}

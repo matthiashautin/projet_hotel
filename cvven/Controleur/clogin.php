@@ -37,7 +37,6 @@ if (isset($_POST['Connexion'])) {
             $_SESSION['ID'] = $rows['ID'];
             $_SESSION['Nom'] = $rows['Nom'];
             $_SESSION['Prenom'] = $rows['Prenom'];
-            $_SESSION['Client_ID'] = $ClientID;
             $message = 'Connexion réussi user';
             header('location:../Vue/home.php');
         } else {

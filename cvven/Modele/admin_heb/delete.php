@@ -19,7 +19,7 @@
         $database->close();
     }
     else{
-    $_SESSION['message'] = 'Selectionnez une hebergement à supprimer en premier';
+    $_SESSION['message'] = 'Selectionnez une Hebergement à supprimer en premier';
     }
 
     header('location: ../../Vue/admin_heb.php');

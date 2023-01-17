@@ -1,35 +1,32 @@
 <?php
-    session_start();   
-    include_once('../../Controleur/conn_db.php');
+session_start();
+include_once('../../Controleur/conn_db.php');
 
-    if(isset($_POST['edit'])){
-        //connection
-        $database = new Connection();
-        $db = $database->open();
-        try{
-            //création des variables 
-            $id = $_GET['ID'];
-            $Pension_Complete = $_POST['Logements'];
-            $Pension_Complete = $_POST['Chambres_doubles'];
-            $Demi_Pension = $_POST['Chambres_3_Lits'];
-            $Repas_Bebe = $_POST['Chambres_4_Lits'];
-            $Pique_nique = $_POSR['Logement_Handi'];
-            $Reunions = $_POST['Ménage'];
+if (isset($_POST['edit'])) {
+    //connection
+    $database = new Connection();
+    $db = $database->open();
+    try {
+        //création des variables 
+        $id = $_GET['ID'];
+        $Pension_Complete = $_POST['Logements'];
+        $Pension_Complete = $_POST['Chambres_doubles'];
+        $Demi_Pension = $_POST['Chambres_3_Lits'];
+        $Repas_Bebe = $_POST['Chambres_4_Lits'];
+        $Pique_nique = $_POSR['Logement_Handi'];
+        $Reunions = $_POST['Menage'];
 
-            //preparer la sql injection pour la table animation
-            $sql = "UPDATE Hebergement SET Logements = '$Logements', UPDATE Hebergement SET Chambres_doubles = '$Chambres_doubles', Chambres_3_Lits = '$Chambres_3_Lits', Chambres_4_Lits = '$Chambres_4_Lits', Logement_Handi = '$Logement_Handi', Ménage = '$Ménage'  WHERE ID = '$id'";
-            //excecuter l'injection sql instruction if-else dans l'exécution de notre requête
-            $_SESSION['message'] = ( $db->exec($sql) ) ? 'Hebergement mis à jour avec succès' : 'Une erreur est survenue. Impossible de mettre à jour cette Hebergement';
-
-        }
-        catch(PDOException $e){
+        //preparer la sql injection pour la table animation
+        $sql = "UPDATE Hebergement SET Logements = '$Logements', Chambres_doubles = '$Chambres_doubles', Chambres_3_Lits = '$Chambres_3_Lits', Chambres_4_Lits = '$Chambres_4_Lits', Logement_Handi = '$Logement_Handi', Menage = '$Menage'  WHERE ID = '$id'";
+        //excecuter l'injection sql instruction if-else dans l'exécution de notre requête
+        $_SESSION['message'] = ($db->exec($sql)) ? 'Hebergement mis à jour avec succès' : 'Une erreur est survenue. Impossible de mettre à jour cette Hebergement';
+    } catch (PDOException $e) {
         $_SESSION['message'] = $e->getMessage();
-        }
-        //close connection
-        $database->close();
     }
-    else{
-        $_SESSION['message'] = 'Remplissez en premier le formulaire de modification';
-    }
+    //close connection
+    $database->close();
+} else {
+    $_SESSION['message'] = 'Remplissez en premier le formulaire de modification';
+}
 
-    header('location: ../../Vue/admin_heb.php');
+header('location: ../../Vue/admin_heb.php');

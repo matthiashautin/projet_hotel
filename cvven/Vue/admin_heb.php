@@ -33,7 +33,7 @@ include "./common/menu.php";
                     <thead>
                         <th class="top-th">Id</th>
                         <th class="top-th">Logements</th>
-                        <th class="top-th">Chambre_Doubles</th>
+                        <th class="top-th">Chambres_doubles</th>
                         <th class="top-th">Chambres_3_Lits</th>
                         <th class="top-th">Chambres_4_Lits</th>
                         <th class="top-th">Logement_Handi</th>

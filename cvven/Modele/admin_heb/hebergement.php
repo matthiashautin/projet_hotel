@@ -19,7 +19,7 @@ try {
                 <a href="#edit_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-edit" data-bs-toggle="modal"> Modifier</a>
                 <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a>
             </td>
-            <?php include('../Vue/Hebergement/edit_delete_Hebergement.php'); ?>
+            <?php include('../Vue/Hebergement/edit_delete_hebergement.php'); ?>
         </tr>
 <?php
     }

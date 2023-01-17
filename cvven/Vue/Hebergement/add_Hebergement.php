@@ -5,58 +5,58 @@
       <div class="modal-header">
         <h5 class="modal-title" id="ModalLabel">Add Hebergement</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
+      </div>
       <div class="modal-body">
         <form method="POST" action="../Modele/admin_resto/add.php">
 
-        <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Logements</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Logements">
-                </div>
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Logements</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="Logements">
             </div>
+          </div>
 
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Chambre_Doubles</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Chambre_Doubles">
-                </div>
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Chambre_Doubles</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="Chambre_Doubles">
             </div>
+          </div>
 
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Chambres_3_Lits</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Chambres_3_Lits">
-                </div>
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Chambres_3_Lits</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="Chambres_3_Lits">
             </div>
+          </div>
 
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Chambres_4_Lits</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Chambres_4_Lits">
-                </div>
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Chambres_4_Lits</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="Chambres_4_Lits">
             </div>
+          </div>
 
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Logement_Handi</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Logement_Handi">
-                </div>
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Logement_Handi</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="Logement_Handi">
             </div>
+          </div>
 
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Menage</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Menage">
-                </div>
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Menage</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="Menage">
             </div>
+          </div>
 
-        </div>
-    <div class="modal-footer">
+      </div>
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
         <button type="submit" name="add" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Sauvegarder</a>
-    </form>
+          </form>
+      </div>
     </div>
-   </div>
   </div>
 </div>

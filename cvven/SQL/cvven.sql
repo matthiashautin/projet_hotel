@@ -19,12 +19,12 @@ CREATE TABLE Restauration (
 
 CREATE TABLE Hebergement (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    Logements INT(40),
-    Chambres_doubles INT(15),
-    Chambres_3_Lits INT(8),
-    Chambres_4_Lits INT(12),
-    Logement_Handi INT(1),
-    Menage BOOL
+    Logements BOOL INT(40),
+    Chambres_doubles BOOL INT(15),
+    Chambres_3_Lits BOOL INT(8),
+    Chambres_4_Lits BOOL INT(12),
+    Logement_Handi BOOL INT(1),
+    Menage VARCHAR(150)
 );
 
 CREATE TABLE Animation (

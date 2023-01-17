@@ -17,7 +17,6 @@ include "../Controleur/cregister.php";
    <link rel="stylesheet" href="../css/components.css">
 </head>
 <body>
-
     <h2 class="message">
         <span>
             <?php
@@ -36,7 +35,6 @@ include "../Controleur/cregister.php";
             ?>
         </span>
     </h2>
-
     <section class="image" >
         <img src="../Image/hotel.png" alt="" >
     </section>

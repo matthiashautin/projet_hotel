@@ -10,7 +10,7 @@
             //preparer la sql injection pour la table animation
             $sql = "DELETE FROM Hebergement WHERE ID = '".$_GET['ID']."'";
             //excecuter l'injection sql instruction if-else dans l'exécution de notre requête
-            $_SESSION['message'] = ( $db->exec($sql) ) ? 'hebergement supprimé avec succès' : 'Une erreur est survenue. Impossible de supprimer cette hebergement';
+            $_SESSION['message'] = ( $db->exec($sql) ) ? 'Hebergement supprimé avec succès' : 'Une erreur est survenue. Impossible de supprimer cette hebergement';
         }
         catch(PDOException $e){
             $_SESSION['message'] = $e->getMessage();

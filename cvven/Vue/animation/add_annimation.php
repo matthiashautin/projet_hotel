@@ -11,7 +11,7 @@
             <div class="mb-3 row">
               <label class="col-sm-2 col-form-label">Nom_Anim</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" name="nomanim">
+                    <input type="text" class="form-control" name="Nom_Anim">
                 </div>
               </div>
             <div class="mb-3 row">

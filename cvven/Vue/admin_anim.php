@@ -30,7 +30,7 @@ include "./common/menu.php";
             <table class="table table-bordered table-striped">
                 <thead>
                     <th class="top-th">Id</th>
-                    <th class="top-th">nom_anim</th>
+                    <th class="top-th">Nom_Anim</th>
                     <th class="top-th">vacances_scol</th>
                     <th class="top-th">hors_vacances_scol</th>
                     <th class="top-th">Action</th>

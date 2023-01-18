@@ -166,6 +166,7 @@ p {
 .btn-deco-co {
     display: flex;
     justify-content: right;
+    margin-top: .5rem;
 }
 
 /*-_-*-_-*-_-*-_-*-_-*-_-*   btn pour déconnexion   *-_-*-_-*-_-*-_-*-_-*-_-*/
@@ -374,6 +375,7 @@ main {
 .table {
     margin: auto;
     padding: auto;
+    margin-top: 2rem;
 }
 
 th{

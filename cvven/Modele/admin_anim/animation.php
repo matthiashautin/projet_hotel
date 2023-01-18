@@ -9,7 +9,7 @@
         ?>
             <tr>
                 <td><?php echo htmlspecialchars($row['ID']); ?></td>
-                <td><?php echo htmlspecialchars($row['nomanim']); ?></td>
+                <td><?php echo htmlspecialchars($row['Nom_Anim']); ?></td>
                 <td><?php echo htmlspecialchars($row['Vacances_Scolaire']); ?></td>
                 <td><?php echo htmlspecialchars($row['Hors_Vacances_Scolaire']); ?></td>
                 <td class="td-edit-delete">

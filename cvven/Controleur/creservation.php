@@ -53,7 +53,8 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
 
     if ($client_ID['Client_ID'] == $_SESSION['user_id']) {
         try {
-            $sql = "SELECT * FROM `Reservation` WHERE Client_ID='$id'";
+            //$sql = "SELECT * FROM `Reservation`,`Client` WHERE ID='$id'";
+            $sql = "SELECT Client.ID, Reservation.* FROM Client RIGHT JOIN Reservation ON Client.Reservation_ID = Reservation.Reservation_ID WHERE Client_ID='$id';";
             foreach ($db->query($sql) as $row) {
     ?>        
         <thead>
@@ -67,8 +68,8 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
             <th class="top-th">Action</th>
         </thead>
             <tr>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Hebergement_ID']); ?></td>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Client_ID']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['ID_RES']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Nom']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Restauration_ID']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Animation_ID']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Region_ID']); ?></td>

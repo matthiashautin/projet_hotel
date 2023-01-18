@@ -9,14 +9,10 @@
         try{
             //création des variables 
             $id = $_GET['ID'];
-            $Pension_Complete = $_POST['Pension_Complete'];
-            $Demi_Pension = $_POST['Demi_Pension'];
-            $Repas_Bebe = $_POST['Repas_Bebe'];
-            $Pique_nique = $_POSR['Pique_nique'];
-            $Reunions = $_POST['Reunions'];
+            $Type_Resto = $_POST['Type_Resto'];
 
             //preparer la sql injection pour la table animation
-            $sql = "UPDATE Restauration SET Pension_Complete = '$Pension_Complete', Demi_Pension = '$Demi_Pension', Repas_Bebe = '$Repas_Bebe', Pique_nique = '$Pique_nique', Reunions = '$Reunions'  WHERE ID = '$id'";
+            $sql = "UPDATE Restauration SET Type_Resto = '$Type_Resto'  WHERE ID = '$id'";
             //excecuter l'injection sql instruction if-else dans l'exécution de notre requête
             $_SESSION['message'] = ( $db->exec($sql) ) ? 'Restauration mis à jour avec succès' : 'Une erreur est survenue. Impossible de mettre à jour cette restauration';
 

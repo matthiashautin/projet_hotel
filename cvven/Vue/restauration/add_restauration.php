@@ -10,37 +10,9 @@
         <form method="POST" action="../Modele/admin_resto/add.php">
 
             <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Pension_Complete</label>
+              <label class="col-sm-2 col-form-label">Type_Resto</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Pension_Complete">
-                </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Demi_Pension</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Demi_Pension">
-                </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Repas_Bebe</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Repas_Bebe">
-                </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Pique_nique</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Pique_nique">
-                </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label class="col-sm-2 col-form-label">Reunions</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="Reunions">
+                    <input type="text" class="form-control" name="Type_Resto">
                 </div>
             </div>
 

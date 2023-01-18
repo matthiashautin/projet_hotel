@@ -31,11 +31,6 @@ include "./common/menu.php";
                     <thead>
                         <th class="top-th">ID</th>
                         <th class="top-th">Logements</th>
-                        <th class="top-th">Chambres_doubles</th>
-                        <th class="top-th">Chambres_3_Lits</th>
-                        <th class="top-th">Chambres_4_Lits</th>
-                        <th class="top-th">Logement_Handi</th>
-                        <th class="top-th">Menage</th>
                         <th class="top-th">Action</th>
                     </thead>
                     <?php

@@ -1,3 +1,4 @@
+
 CREATE TABLE Client (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     Nom VARCHAR(255) NOT NULL,
@@ -19,12 +20,12 @@ CREATE TABLE Restauration (
 
 CREATE TABLE Hebergement (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    Logements VARCHAR(40),
-    -- Chambres_doubles BOOL INT(15),
-    -- Chambres_3_Lits BOOL INT(8),
-    -- Chambres_4_Lits BOOL INT(12),
-    -- Logement_Handi BOOL INT(1),
-
+    Logements BOOL INT(40),
+    Chambres_doubles BOOL INT(15),
+    Chambres_3_Lits BOOL INT(8),
+    Chambres_4_Lits BOOL INT(12),
+    Logement_Handi BOOL INT(1),
+    Menage VARCHAR(150)
 );
 
 CREATE TABLE Animation (
@@ -44,7 +45,6 @@ CREATE TABLE Reservation (
     Restauration_ID INT,
     Animation_ID INT,
     Region_ID INT,
-    Menage VARCHAR(50)
     DateDebut DATETIME,
     DateFin DATETIME NOT NULL,
     CONSTRAINT FK_ReservationHebergement FOREIGN KEY (Hebergement_ID) REFERENCES Hebergement(ID),
@@ -52,7 +52,7 @@ CREATE TABLE Reservation (
     CONSTRAINT FK_ReservationRestauration FOREIGN KEY (Restauration_ID) REFERENCES Restauration(ID),
     CONSTRAINT FK_ReservationAnimation FOREIGN KEY (Animation_ID) REFERENCES Animation(ID),
     CONSTRAINT FK_ReservationRegion FOREIGN KEY (Region_ID) REFERENCES Region(ID),
-    PRIMARY KEY (Hebergement_ID, Client_ID, Restauration_ID, Animation_ID, Region_ID, DateDebut, DateFin)
+    PRIMARY KEY (Hebergement_ID, Client_ID, Restauration_ID, Animation_ID, Region_ID)
 );
 
 

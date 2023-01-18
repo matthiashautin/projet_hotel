@@ -10,11 +10,6 @@ try {
         <tr>
             <td><?php echo htmlspecialchars($row['ID']); ?></td>
             <td><?php echo htmlspecialchars($row['Logements']); ?></td>
-            <td><?php echo htmlspecialchars($row['Chambres_doubles']); ?></td>
-            <td><?php echo htmlspecialchars($row['Chambres_3_Lits']); ?></td>
-            <td><?php echo htmlspecialchars($row['Chambres_4_Lits']); ?></td>
-            <td><?php echo htmlspecialchars($row['Logement_Handi']); ?></td>
-            <td><?php echo htmlspecialchars($row['Menage']); ?></td>
             <td class="td-edit-delete">
                 <a href="#edit_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-edit" data-bs-toggle="modal"> Modifier</a>
                 <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a>

@@ -15,42 +15,7 @@
               <input type="text" class="form-control" name="Logements">
             </div>
           </div>
-
-          <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Chambres_Doubles</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="Chambres_doubles">
-            </div>
-          </div>
-
-          <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Chambres_3_Lits</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="Chambres_3_Lits">
-            </div>
-          </div>
-
-          <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Chambres_4_Lits</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="Chambres_4_Lits">
-            </div>
-          </div>
-
-          <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Logement_Handi</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="Logement_Handi">
-            </div>
-          </div>
-
-          <div class="mb-3 row">
-            <label class="col-sm-2 col-form-label">Menage</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="Menage">
-            </div>
-          </div>
-
+          
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>

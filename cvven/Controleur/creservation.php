@@ -54,12 +54,17 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
     if ($client_ID['Client_ID'] == $_SESSION['user_id']) {
         try {
             //$sql = "SELECT * FROM `Reservation`,`Client` WHERE ID='$id'";
-            $sql = "SELECT Client.ID, Reservation.* FROM Client RIGHT JOIN Reservation ON Client.Reservation_ID = Reservation.Reservation_ID WHERE Client_ID='$id';";
-            foreach ($db->query($sql) as $row) {
+            $sql = "SELECT * FROM Client
+            INNER JOIN Reservation ON Client.ID = Reservation.Client_ID WHERE Client_ID='$id'";
+
+            $sql1 = "SELECT * FROM Hebergement 
+            INNER JOIN Reservation ON Hebergement.ID = Reservation.Hebergement_ID";
+
+            foreach ($db->query($sql1) as $row) {
     ?>        
         <thead>
-            <th class="top-th">Type_hebergement</th>
             <th class="top-th">Id_client</th>
+            <th class="top-th">Id_Hebergement</th>
             <th class="top-th">Id_restauration</th>
             <th class="top-th">Id_animation</th>
             <th class="top-th">Id_region</th>
@@ -68,8 +73,8 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
             <th class="top-th">Action</th>
         </thead>
             <tr>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['ID_RES']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Nom']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Logements']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Restauration_ID']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Animation_ID']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Region_ID']); ?></td>

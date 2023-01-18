@@ -67,8 +67,8 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
             <th class="top-th">Action</th>
         </thead>
             <tr>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Logements']); ?></td>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Nom']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Hebergement_ID']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Client_ID']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Restauration_ID']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Animation_ID']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Region_ID']); ?></td>

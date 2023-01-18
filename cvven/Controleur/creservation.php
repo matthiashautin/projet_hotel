@@ -53,19 +53,21 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
 
     if ($client_ID['Client_ID'] == $_SESSION['user_id']) {
         try {
-            $sql = "SELECT * FROM `Reservation`,`Client` WHERE Client_ID='$id'";
+            $sql = "SELECT * FROM `Reservation` WHERE Client_ID='$id'";
             foreach ($db->query($sql) as $row) {
     ?>        
         <thead>
-            <th class="top-th">Nom_Client</th>
-            <th class="top-th">Type_Restauration</th>
-            <th class="top-th">Type_Animation</th>
-            <th class="top-th">Nom_Region</th>
+            <th class="top-th">Type_hebergement</th>
+            <th class="top-th">Id_client</th>
+            <th class="top-th">Id_restauration</th>
+            <th class="top-th">Id_animation</th>
+            <th class="top-th">Id_region</th>
             <th class="top-th">datedebut</th>
             <th class="top-th">datefin</th>
             <th class="top-th">Action</th>
         </thead>
             <tr>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Logements']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Nom']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Restauration_ID']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Animation_ID']); ?></td>

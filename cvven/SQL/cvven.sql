@@ -19,12 +19,12 @@ CREATE TABLE Restauration (
 
 CREATE TABLE Hebergement (
     ID INT PRIMARY KEY AUTO_INCREMENT,
-    Logements BOOL INT(40),
-    Chambres_doubles BOOL INT(15),
-    Chambres_3_Lits BOOL INT(8),
-    Chambres_4_Lits BOOL INT(12),
-    Logement_Handi BOOL INT(1),
-    Menage VARCHAR(150)
+    Logements VARCHAR(40),
+    -- Chambres_doubles BOOL INT(15),
+    -- Chambres_3_Lits BOOL INT(8),
+    -- Chambres_4_Lits BOOL INT(12),
+    -- Logement_Handi BOOL INT(1),
+
 );
 
 CREATE TABLE Animation (
@@ -44,6 +44,7 @@ CREATE TABLE Reservation (
     Restauration_ID INT,
     Animation_ID INT,
     Region_ID INT,
+    Menage VARCHAR(50)
     DateDebut DATETIME,
     DateFin DATETIME NOT NULL,
     CONSTRAINT FK_ReservationHebergement FOREIGN KEY (Hebergement_ID) REFERENCES Hebergement(ID),

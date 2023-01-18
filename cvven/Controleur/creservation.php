@@ -54,7 +54,8 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
     if ($client_ID['Client_ID'] == $_SESSION['user_id']) {
         try {
             //$sql = "SELECT * FROM `Reservation`,`Client` WHERE ID='$id'";
-            $sql = "SELECT Hebergement.Logements, Client.Nom, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region FROM Reservation AS Res
+            $sql = "SELECT *,Hebergement.Logements, Client.Nom, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
+             FROM Reservation AS Res
             INNER JOIN Hebergement ON Hebergement.ID = Res.Hebergement_ID
             INNER JOIN Restauration ON Restauration.ID = Res.Restauration_ID
             INNER JOIN Animation ON Animation.ID = Res.Animation_ID
@@ -64,11 +65,12 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
             foreach ($db->query($sql) as $row) {
     ?>        
         <thead>
-            <th class="top-th">Id_client</th>
-            <th class="top-th">Id_Hebergement</th>
-            <th class="top-th">Id_restauration</th>
-            <th class="top-th">Id_animation</th>
-            <th class="top-th">Id_region</th>
+            <th class="top-th">Client</th>
+            <th class="top-th">Logement</th>
+            <th class="top-th">Restauration</th>
+            <th class="top-th">Animation</th>
+            <th class="top-th">Region</th>
+            <th class="top-th">Menage</th>
             <th class="top-th">datedebut</th>
             <th class="top-th">datefin</th>
             <th class="top-th">Action</th>
@@ -79,6 +81,7 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Type_Resto']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Nom_Anim']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Nom_Region']); ?></td>
+                <td class="reservation-id"><?php echo htmlspecialchars($row['Menage']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['DateDebut']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['DateFin']); ?></td>
                 <td class="td-edit-delete">

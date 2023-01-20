@@ -64,16 +64,6 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
 
             foreach ($db->query($sql) as $row) {
     ?>        
-        <thead>
-            <th class="top-th">Logement</th>
-            <th class="top-th">Restauration</th>
-            <th class="top-th">Animation</th>
-            <th class="top-th">Region</th>
-            <th class="top-th">Menage</th>
-            <th class="top-th">datedebut</th>
-            <th class="top-th">datefin</th>
-            <th class="top-th">Action</th>
-        </thead>
             <tr>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Logements']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Type_Resto']); ?></td>
@@ -87,6 +77,7 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
                 </td>
                 <?php include('../Vue/reservation/edit_delete_reservation.php'); ?>
             </tr>
+        
         <?php
             }
         } catch (PDOException $e) {

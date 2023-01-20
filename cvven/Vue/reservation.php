@@ -17,7 +17,16 @@ include '../Controleur/cheader.php';
 
 <body>
     <table class="table table-bordered table-striped">
-
+        <thead>
+            <th class="top-th">Logement</th>
+            <th class="top-th">Restauration</th>
+            <th class="top-th">Animation</th>
+            <th class="top-th">Region</th>
+            <th class="top-th">Menage</th>
+            <th class="top-th">datedebut</th>
+            <th class="top-th">datefin</th>
+            <th class="top-th">Action</th>
+        </thead>
         <?php
         include '../Controleur/creservation.php';
         ?>

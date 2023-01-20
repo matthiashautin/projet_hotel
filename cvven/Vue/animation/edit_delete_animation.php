@@ -11,7 +11,7 @@
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Nom_Anim</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name="nomanim" value="<?php echo htmlspecialchars($row['nomanim']); ?>">
+                <input type="text" class="form-control" name="Nom_Anim" value="<?php echo htmlspecialchars($row['Nom_Anim']); ?>">
             </div>
         </div>
 
@@ -47,7 +47,7 @@
     </div>
       <div class="modal-body">
         <p class="text-center">Êtes-vous sur de vouloir supprimer cette animation?</p>
-        <h2 class="text-center"><?php echo htmlspecialchars($row['nomanim']); ?></h2>
+        <h2 class="text-center"><?php echo htmlspecialchars($row['Nom_Anim']); ?></h2>
       </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>

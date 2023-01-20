@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
                 <form method="POST" action="../Modele/admin_res/add.php">
-                    <div class="mb-3 row">
+                <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">ID_Hebergement</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="Hebergement_ID">
@@ -36,6 +36,12 @@
                         <label class="col-sm-2 col-form-label">ID_Region</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="Region_ID">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Menage</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="Menage">
                         </div>
                     </div>
                     <div class="mb-3 row">

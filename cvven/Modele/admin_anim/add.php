@@ -8,9 +8,9 @@
         $db = $database->open();
         try{
             //preparer la sql injection pour la table animation
-            $stmt = $db->prepare("INSERT INTO Animation (nomanim, Vacances_Scolaire, Hors_Vacances_Scolaire) VALUES (:nomanim, :Vacances_Scolaire, :Hors_Vacances_Scolaire)");
+            $stmt = $db->prepare("INSERT INTO Animation (Nom_Anim, Vacances_Scolaire, Hors_Vacances_Scolaire) VALUES (:Nom_Anim, :Vacances_Scolaire, :Hors_Vacances_Scolaire)");
             //excecuter l'injection sql instruction if-else dans l'exécution de notre requête
-            $_SESSION['message'] = ( $stmt->execute(array(':nomanim' => $_POST['nomanim'] , ':Vacances_Scolaire' => $_POST['Vacances_Scolaire'] , ':Hors_Vacances_Scolaire' => $_POST['Hors_Vacances_Scolaire'])) ) ? "Animation ajouté avec succès" : "Une erreur s'est produite. Impossible d'ajouter cette animation";
+            $_SESSION['message'] = ( $stmt->execute(array(':Nom_Anim' => $_POST['Nom_Anim'] , ':Vacances_Scolaire' => $_POST['Vacances_Scolaire'] , ':Hors_Vacances_Scolaire' => $_POST['Hors_Vacances_Scolaire'])) ) ? "Animation ajouté avec succès" : "Une erreur s'est produite. Impossible d'ajouter cette animation";
         }
         catch(PDOException $e){
             $_SESSION['message'] = $e->getMessage();

@@ -31,11 +31,12 @@ include "./common/menu.php";
                 <table class="table table-bordered table-striped">
                     <thead>
                         <th class="top-th">Id</th>
-                        <th class="top-th">Id_hebergement</th>
+                        <th class="top-th">ID_hebergement</th>
                         <th class="top-th">Id_client</th>
                         <th class="top-th">Id_restauration</th>
                         <th class="top-th">Id_animation</th>
                         <th class="top-th">Id_region</th>
+                        <th class="top-th">Menage</th>
                         <th class="top-th">datedebut</th>
                         <th class="top-th">datefin</th>
                         <th class="top-th">Action</th>

@@ -5,6 +5,7 @@
     --green: #27ae60;
     --orange: #f39c12;
     --yellow: #baa56f;
+    --green1: #34ad19;
     --red: #e74c3c;
     --black: #333;
     --blue: #2f6cc6;
@@ -186,6 +187,7 @@ p {
     color: #fff;
     font-weight: 400;
     transition: .2s;
+    font-size: 1.2rem;
 }
 
 .btn-deco:hover {
@@ -474,7 +476,7 @@ td a {
     align-items: center;
     width: 7rem;
     height: 2rem;
-    background-color: var(--red1);
+    background-color: var(--green);
     border: 2px outset #fff;
     border-radius: 1rem;
     color: #fff;
@@ -482,7 +484,7 @@ td a {
 }
 
 .btn-delete:hover {
-    background-color: #a71404;
+    background-color: #25581a;
     color: #fff;
 }
 

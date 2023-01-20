@@ -412,6 +412,7 @@ ul {
     margin: auto;
     padding: auto;
     margin-top: 2rem;
+    width: 80%;
 }
 
 th {
@@ -504,6 +505,15 @@ h1 {
 
 a:hover {
     color: white;
+<<<<<<< Updated upstream
   }
 
   /*(yytety*/
+=======
+}
+
+.modal .modal-dialog .modal-content .modal-body h2.text-center p {
+    color: var(--red);
+    font-size: 1em;
+}
+>>>>>>> Stashed changes

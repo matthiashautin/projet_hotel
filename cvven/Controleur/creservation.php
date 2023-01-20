@@ -55,11 +55,12 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
         try {
             //$sql = "SELECT * FROM `Reservation`,`Client` WHERE ID='$id'";
             $sql = "SELECT *,Hebergement.Logements, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
-            FROM Reservation AS Res
+             FROM Reservation AS Res
             INNER JOIN Hebergement ON Hebergement.ID = Res.Hebergement_ID
             INNER JOIN Restauration ON Restauration.ID = Res.Restauration_ID
             INNER JOIN Animation ON Animation.ID = Res.Animation_ID
-            INNER JOIN Region ON Region.ID = Res.Region_ID";
+            INNER JOIN Region ON Region.ID = Res.Region_ID
+            INNER JOIN Client ON Client.ID = Res.Client_ID WHERE Client_ID='$id'";
 
             foreach ($db->query($sql) as $row) {
     ?>        
@@ -82,8 +83,9 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['DateDebut']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['DateFin']); ?></td>
                 <td class="td-edit-delete">
-                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a> 
+                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal">Supprimer</a> 
                 </td>
+                <?php include('../Vue/reservation/edit_delete_reservation.php'); ?>
             </tr>
         <?php
             }

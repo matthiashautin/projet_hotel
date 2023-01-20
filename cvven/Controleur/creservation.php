@@ -54,7 +54,7 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
     if ($client_ID['Client_ID'] == $_SESSION['user_id']) {
         try {
             //$sql = "SELECT * FROM `Reservation`,`Client` WHERE ID='$id'";
-            $sql = "SELECT *,Hebergement.Logements, Client.Nom, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
+            $sql = "SELECT *,Hebergement.Logements, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
              FROM Reservation AS Res
             INNER JOIN Hebergement ON Hebergement.ID = Res.Hebergement_ID
             INNER JOIN Restauration ON Restauration.ID = Res.Restauration_ID
@@ -65,7 +65,6 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
             foreach ($db->query($sql) as $row) {
     ?>        
         <thead>
-            <th class="top-th">Client</th>
             <th class="top-th">Logement</th>
             <th class="top-th">Restauration</th>
             <th class="top-th">Animation</th>
@@ -76,7 +75,6 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
             <th class="top-th">Action</th>
         </thead>
             <tr>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Nom']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Logements']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Type_Resto']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['Nom_Anim']); ?></td>
@@ -85,8 +83,9 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['DateDebut']); ?></td>
                 <td class="reservation-id"><?php echo htmlspecialchars($row['DateFin']); ?></td>
                 <td class="td-edit-delete">
-                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a> 
+                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal">Supprimer</a> 
                 </td>
+                <?php include('../Vue/reservation/edit_delete_reservation.php'); ?>
             </tr>
         <?php
             }

@@ -69,8 +69,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p class="text-center">Êtes-vous sur de vouloir supprimer cette reservation?</p>
-                <h2 class="text-center"><?php echo htmlspecialchars($row['Hebergement_ID']); ?></h2>
+                <p class="text-center">Êtes-vous sur de vouloir supprimer la reservation suivante ?</p>
+                <h2 class="text-center"><p>Logement:</p> <?php echo htmlspecialchars($row['Logements']); ?></h2>
+                <h2 class="text-center"><p>Restauration:</p> <?php echo htmlspecialchars($row['Type_Resto']); ?></h2>
+                <h2 class="text-center"><p>Animation:</p> <?php echo htmlspecialchars($row['Nom_Anim']); ?></h2>
+                <h2 class="text-center"><p>Region:</p> <?php echo htmlspecialchars($row['Nom_Region']); ?></h2>
+                <h2 class="text-center"><p>Ménage:</p> <?php echo htmlspecialchars($row['Menage']); ?></h2>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>

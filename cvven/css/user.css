@@ -45,6 +45,7 @@ header img {
     border-radius: 60px;
     margin: 0 2rem 0 1rem;
     filter: invert(20%);
+    list-style-type: none;
 }
 
 header h4 {

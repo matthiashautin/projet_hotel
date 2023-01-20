@@ -1,21 +1,23 @@
+/*modif*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
-:root{
-    --green:#27ae60;
-    --orange:#f39c12;
-    --yellow:#baa56f ;
-    --red:#e74c3c;
-    --black:#333;
+:root {
+    --green: #27ae60;
+    --orange: #f39c12;
+    --yellow: #baa56f;
+    --red: #e74c3c;
+    --black: #333;
     --blue: #2f6cc6;
     --green1: #00ab66;
-    --red1:#dc210e;
+    --red1: #dc210e;
     --moreblack: #222;
-    --light-color:#666;
-    --white:#fff;
-    --light-bg:#f6f6f6;
-    --white-light:#f2f2f2;
-    --border:.3rem solid rgba(0, 0, 0, 0.47);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --light-color: #666;
+    --white: #fff;
+    --light-bg: #f6f6f6;
+    --white-light: #f2f2f2;
+    --border: .3rem solid rgba(0, 0, 0, 0.47);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 * {
@@ -25,7 +27,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body  {
+body {
     background-color: var(--moreblack);
 }
 
@@ -97,7 +99,7 @@ section .Saint-Antheme .title-image {
 
 section .Villefort .title-image {
     padding: 7% 14%;
-    float: right; 
+    float: right;
     margin-top: -130px;
 }
 
@@ -158,7 +160,7 @@ p {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    
+
 }
 
 /*-_-*-_-*-_-*-_-*-_-*-_-*   btns pour conn-déconn   *-_-*-_-*-_-*-_-*-_-*-_-*/
@@ -204,7 +206,7 @@ p {
 }
 
 .btn-co:hover {
-    background-color:  #02804d;
+    background-color: #02804d;
 }
 
 
@@ -212,10 +214,22 @@ p {
 
 
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -226,7 +240,8 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -249,8 +264,9 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -259,7 +275,7 @@ img {vertical-align: middle;}
     justify-content: center;
     text-align: center;
     padding: 8px 12px;
-    margin: -5rem auto 6rem auto ;
+    margin: -5rem auto 6rem auto;
     width: 20rem;
 }
 
@@ -274,7 +290,7 @@ img {vertical-align: middle;}
 }
 
 .text:hover {
-    background-color:var(--green1);
+    background-color: var(--green1);
     color: #fff;
 }
 
@@ -301,7 +317,8 @@ img {vertical-align: middle;}
     margin-bottom: 5rem;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
 
@@ -328,13 +345,23 @@ main {
 }
 
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
 }
 
 .ul-header {
@@ -378,7 +405,7 @@ main {
     margin-top: 2rem;
 }
 
-th{
+th {
     padding: auto;
     padding: 1rem;
     border: .1rem solid #ddd;
@@ -390,7 +417,8 @@ th.top-th {
     text-transform: uppercase;
 }
 
-tr,td {
+tr,
+td {
     padding: .2rem 3rem;
     background-color: #666;
     border: 1px solid #ddd;
@@ -445,7 +473,7 @@ td a {
     color: #fff;
 }
 
-td.td-edit-delete{
+td.td-edit-delete {
     display: flex;
     justify-content: center;
     align-items: center;

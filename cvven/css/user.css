@@ -421,14 +421,18 @@ th {
     border: .1rem solid #ddd;
 }
 
+th{
+    padding: auto;
+    padding: 1rem;
+    border: .1rem solid #ddd;
+}
+
 th.top-th {
     background-color: var(--green);
     padding: 1rem;
     text-transform: uppercase;
 }
-
-tr,
-td {
+tr,td {
     padding: .2rem 3rem;
     background-color: #666;
     border: 1px solid #ddd;
@@ -436,7 +440,7 @@ td {
 }
 
 td {
-    height: 3.5rem;
+    height: 2rem;
 }
 
 td a {
@@ -468,7 +472,6 @@ td a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: .3rem;
     width: 7rem;
     height: 2rem;
     background-color: var(--red1);
@@ -483,15 +486,10 @@ td a {
     color: #fff;
 }
 
-td.td-edit-delete {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .row {
-    --bs-gutter-x: 17rem;
-}
+    --bs-gutter-x: 55rem;
+    margin-top: -1rem;
+  }
 
 .message p {
     color: white;
@@ -507,7 +505,16 @@ a:hover {
     color: white;
 }
 
+
 .modal .modal-dialog .modal-content .modal-body h2.text-center p {
     color: var(--red);
     font-size: 1em;
+}
+
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 58rem;
+    top: 2rem;
 }

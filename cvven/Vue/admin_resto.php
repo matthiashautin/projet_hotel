@@ -28,7 +28,7 @@ include "./common/menu.php";
                     include('../Controleur/messageadmin.php');
                 ?>
             <table class="table table-bordered table-striped">
-                <thead>Z
+                <thead>
                     <th class="top-th">Id</th>
                     <th class="top-th">Type_Resto</th>
                     <th class="top-th">Action</th>

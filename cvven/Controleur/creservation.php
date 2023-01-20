@@ -39,59 +39,29 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
     <main class="title-region">
         <h1>Vos réservation</h1>
     </main>
-    <?php
-    include_once('../Controleur/conn_db.php');
-    $database = new Connection();
-    $db = $database->open();
+    <div class="container">
+        <div class="row">
+                <?php
+                    include('../Controleur/messageadmin.php');
+                ?>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <th class="top-th">Logement</th>
+                    <th class="top-th">Restauration</th>
+                    <th class="top-th">Animation</th>
+                    <th class="top-th">Region</th>
+                    <th class="top-th">Menage</th>
+                    <th class="top-th">datedebut</th>
+                    <th class="top-th">datefin</th>
+                    <th class="top-th">Action</th>
+                </thead>
+                    <?php
+                    include '../Modele/user_res/vos_reservation.php';
+                    ?>
+            </table>
+    </div>
+<?php 
 
-    $id = $_SESSION['user_id'];
-    $reservation = $db->prepare("SELECT * FROM `Reservation` WHERE Client_ID='$id'");
-    $reservation->execute();
-    $client_ID = $reservation->fetch(PDO::FETCH_ASSOC);
-
-    //var_dump($client_ID);
-
-    if ($client_ID['Client_ID'] == $_SESSION['user_id']) {
-        try {
-            //$sql = "SELECT * FROM `Reservation`,`Client` WHERE ID='$id'";
-            $sql = "SELECT *,Hebergement.Logements, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
-             FROM Reservation AS Res
-            INNER JOIN Hebergement ON Hebergement.ID = Res.Hebergement_ID
-            INNER JOIN Restauration ON Restauration.ID = Res.Restauration_ID
-            INNER JOIN Animation ON Animation.ID = Res.Animation_ID
-            INNER JOIN Region ON Region.ID = Res.Region_ID
-            INNER JOIN Client ON Client.ID = Res.Client_ID WHERE Client_ID='$id'";
-
-            foreach ($db->query($sql) as $row) {
-    ?>        
-            <tr>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Logements']); ?></td>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Type_Resto']); ?></td>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Nom_Anim']); ?></td>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Nom_Region']); ?></td>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['Menage']); ?></td>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['DateDebut']); ?></td>
-                <td class="reservation-id"><?php echo htmlspecialchars($row['DateFin']); ?></td>
-                <td class="td-edit-delete">
-                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal">Supprimer</a> 
-                </td>
-                <?php include('../Vue/reservation/edit_delete_reservation.php'); ?>
-            </tr>
-        
-        <?php
-            }
-        } catch (PDOException $e) {
-            echo 'Il y a un problème de connexion :' . $e->getMessage();
-        }
-        //close connection
-        $database->close();
-    } else { ?>
-        <!-- lorsque qu'il n'y a pas de réservation -->
-        <div class="message">
-            <p>Vous n'avez pas de réservation</p>
-        </div>
-<?php
-    }
 } else {
     header('location:./home.php');
 }

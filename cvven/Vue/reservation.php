@@ -12,27 +12,21 @@ include '../Controleur/cheader.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/user.css">
-    <title>Reservation</title>
+    <title></title>
 </head>
-
-<body>
-    <table class="table table-bordered table-striped">
-        <thead>
-            <th class="top-th">Logement</th>
-            <th class="top-th">Restauration</th>
-            <th class="top-th">Animation</th>
-            <th class="top-th">Region</th>
-            <th class="top-th">Menage</th>
-            <th class="top-th">datedebut</th>
-            <th class="top-th">datefin</th>
-            <th class="top-th">Action</th>
-        </thead>
-        <?php
-        include '../Controleur/creservation.php';
-        ?>
-    </table>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-</body>
+                <?php
+                    include('../Controleur/messageadmin.php');
+                ?>
+            
+                <?php
+                    include "../Controleur/creservation.php"; 
+                ?>
+    
+        </div>
+    </div>
+</div>
+    <?php include('./restauration/add_restauration.php'); ?>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
 </html>

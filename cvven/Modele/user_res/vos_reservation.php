@@ -32,7 +32,7 @@
                 <td><?php echo htmlspecialchars($row['DateDebut']); ?></td>
                 <td><?php echo htmlspecialchars($row['DateFin']); ?></td>
                 <td class="td-edit-delete">
-                    <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal">Supprimer</a> 
+                    <a href="#delete_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn-delete" data-bs-toggle="modal">Supprimer</a> 
                 </td>
                 <?php include('../Vue/reservation/edit_delete_reservation.php'); ?>
             </tr>

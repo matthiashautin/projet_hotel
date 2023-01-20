@@ -61,7 +61,7 @@
 </div>
 
 <!-- Delete -->
-<div class="modal fade" id="delete_<?php echo htmlspecialchars($row['ID']); ?>" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+<div class="modal fade" id="delete_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -78,7 +78,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                <a href="../Modele/admin_res/delete.php?ID=<?php echo htmlspecialchars($row['ID']); ?>" class="btn btn-danger"> Oui</a>
+                <a href="../Modele/admin_res/delete.php?ID=<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn btn-danger"> Oui</a>
             </div>
         </div>
     </div>

@@ -37,7 +37,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    height: 7rem;
+    height: 8rem;
 }
 
 header img {
@@ -167,7 +167,9 @@ p {
 .btn-deco-co {
     display: flex;
     justify-content: right;
-    margin-top: .5rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-top: .2rem;
 }
 
 /*-_-*-_-*-_-*-_-*-_-*-_-*   btn pour déconnexion   *-_-*-_-*-_-*-_-*-_-*-_-*/
@@ -186,7 +188,7 @@ p {
 }
 
 .btn-deco:hover {
-    background-color: #9e1a0b;
+    background-color: #9e1a0b !important;
 }
 
 /*-_-*-_-*-_-*-_-*-_-*-_-*   btn pour connexion   *-_-*-_-*-_-*-_-*-_-*-_-*/
@@ -197,21 +199,17 @@ p {
     background-color: var(--green1);
     border: 2px outset #fff;
     border-radius: 20px;
-    width: 10rem;
+    width: 11rem;
     text-decoration: none;
     color: #fff;
     font-weight: 400;
     transition: .2s;
+    font-size: 1.2rem;
 }
 
 .btn-co:hover {
     background-color: #02804d;
 }
-
-
-
-
-
 
 * {
     box-sizing: border-box
@@ -229,6 +227,12 @@ body {
 img {
     vertical-align: middle;
 }
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -333,9 +337,10 @@ main {
 }
 
 .title-region h1 {
-    margin-top: 8rem;
+    margin-top: 10rem;
     color: white;
     text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .title-p p {
@@ -363,11 +368,15 @@ main {
     }
 }
 
+ul {
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
 .ul-header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .header-menu {
@@ -486,3 +495,12 @@ td.td-edit-delete {
     color: white;
     font-size: 1.5rem;
 }
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+a:hover {
+    color: white;
+  }

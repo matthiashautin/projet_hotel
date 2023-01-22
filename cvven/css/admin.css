@@ -74,7 +74,7 @@ tr,td {
 }
 
 td {
-    height: 2rem;
+    height: 4rem;
 }
 
 td a {
@@ -204,5 +204,7 @@ td.td-edit-delete{
     font-weight: 700;
   }
 
-/*test
-  
+.table {
+    width: 118%;
+    margin-left: -2rem;
+}

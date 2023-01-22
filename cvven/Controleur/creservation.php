@@ -8,6 +8,16 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
     <main class="title-p">
         <p>(Charente-Maritime)</p>
     </main>
+
+    <select name="pets" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+    </select>
 <?php
 } else if ((isset($_GET['region']) && $_GET['region'] == "LesRousses")) { ?>
     <main class="title-region">

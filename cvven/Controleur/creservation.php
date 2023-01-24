@@ -18,6 +18,7 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
         <option value="spider">Spider</option>
         <option value="goldfish">Goldfish</option>
     </select>
+    <img src="../Image/hotel-R.jpeg" alt="">
 <?php
 } else if ((isset($_GET['region']) && $_GET['region'] == "LesRousses")) { ?>
     <main class="title-region">

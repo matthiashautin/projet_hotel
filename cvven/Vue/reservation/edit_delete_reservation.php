@@ -9,33 +9,33 @@
             <div class="modal-body">
                 <form method="POST" action="../Modele/admin_res/edit.php?ID=<?php echo htmlspecialchars($row['Reservation_ID']); ?>">
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Hebergement</label>
+                        <label class="col-sm-2 col-form-label">Logements</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Hebergement_ID" value="<?php echo htmlspecialchars($row['Hebergement_ID']); ?>">
+                            <input type="text" class="form-control" name="Hebergement_ID" value="<?php echo htmlspecialchars($row['Logements']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Client</label>
+                        <label class="col-sm-2 col-form-label">Nom_Client</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Client_ID" value="<?php echo htmlspecialchars($row['Client_ID']); ?>">
+                            <input type="text" class="form-control" name="Client_ID" value="<?php echo htmlspecialchars($row['Nom']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Restauration</label>
+                        <label class="col-sm-2 col-form-label">Restauration</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Restauration_ID" value="<?php echo htmlspecialchars($row['Restauration_ID']); ?>">
+                            <input type="text" class="form-control" name="Restauration_ID" value="<?php echo htmlspecialchars($row['Type_Resto']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Animation</label>
+                        <label class="col-sm-2 col-form-label">Animation</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Animation_ID" value="<?php echo htmlspecialchars($row['Animation_ID']); ?>">
+                            <input type="text" class="form-control" name="Animation_ID" value="<?php echo htmlspecialchars($row['Nom_Anim']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Region</label>
+                        <label class="col-sm-2 col-form-label">Region</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Region_ID" value="<?php echo htmlspecialchars($row['Region_ID']); ?>">
+                            <input type="text" class="form-control" name="Region_ID" value="<?php echo htmlspecialchars($row['Nom_Region']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">

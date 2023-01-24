@@ -14,18 +14,14 @@ include '../Controleur/cheader.php';
     <link rel="stylesheet" href="../css/user.css">
     <title></title>
 </head>
-                <?php
-                    include('../Controleur/messageadmin.php');
-                ?>
-            
-                <?php
-                    include "../Controleur/creservation.php"; 
-                ?>
-
-        </div>
-    </div>
-</div>
+<body>
+        <?php
+            include('../Controleur/messageadmin.php');
+        ?>
+        <?php
+            include "../Controleur/creservation.php"; 
+        ?>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-
+</body>
 </html>

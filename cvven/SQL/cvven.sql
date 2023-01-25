@@ -1,4 +1,3 @@
-
 CREATE TABLE Client (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     Nom VARCHAR(255) NOT NULL,
@@ -25,7 +24,7 @@ CREATE TABLE Hebergement (
     Chambres_3_Lits BOOL INT(8),
     Chambres_4_Lits BOOL INT(12),
     Logement_Handi BOOL INT(1),
-    Menage VARCHAR(150)
+    Menage BOOL
 );
 
 CREATE TABLE Animation (
@@ -45,7 +44,7 @@ CREATE TABLE Reservation (
     Restauration_ID INT,
     Animation_ID INT,
     Region_ID INT,
-    DateDebut DATETIME,
+    DateDebut DATETIME NOT NULL,
     DateFin DATETIME NOT NULL,
     CONSTRAINT FK_ReservationHebergement FOREIGN KEY (Hebergement_ID) REFERENCES Hebergement(ID),
     CONSTRAINT FK_ReservationClient FOREIGN KEY (Client_ID) REFERENCES Client(ID),

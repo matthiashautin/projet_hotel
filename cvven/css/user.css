@@ -476,7 +476,7 @@ td a {
     align-items: center;
     width: 7rem;
     height: 2rem;
-    background-color: var(--green);
+    background-color: var(--red1);
     border: 2px outset #fff;
     border-radius: 1rem;
     color: #fff;

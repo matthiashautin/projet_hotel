@@ -9,33 +9,33 @@
             <div class="modal-body">
                 <form method="POST" action="../Modele/admin_res/add.php">
                 <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Hebergement</label>
+                        <label class="col-sm-2 col-form-label">Logements</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Hebergement_ID">
+                            <input type="text" class="form-control" name="Logements">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Client</label>
+                        <label class="col-sm-2 col-form-label">Nom</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Client_ID">
+                            <input type="text" class="form-control" name="Nom">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Restauration</label>
+                        <label class="col-sm-2 col-form-label">Type_Resto</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Restauration_ID">
+                            <input type="text" class="form-control" name="Type_Resto">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Animation</label>
+                        <label class="col-sm-2 col-form-label">Nom_Anim</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Animation_ID">
+                            <input type="text" class="form-control" name="Nom_Anim">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">ID_Region</label>
+                        <label class="col-sm-2 col-form-label">Nom_Region</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Region_ID">
+                            <input type="text" class="form-control" name="Nom_Region">
                         </div>
                     </div>
                     <div class="mb-3 row">

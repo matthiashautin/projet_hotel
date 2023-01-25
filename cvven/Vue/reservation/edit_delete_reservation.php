@@ -11,31 +11,31 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Logements</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Hebergement_ID" value="<?php echo htmlspecialchars($row['Logements']); ?>">
+                            <input type="text" class="form-control" name="Logements" value="<?php echo htmlspecialchars($row['Logements']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Nom_Client</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Client_ID" value="<?php echo htmlspecialchars($row['Nom']); ?>">
+                            <input type="text" class="form-control" name="Nom" value="<?php echo htmlspecialchars($row['Nom']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Restauration</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Restauration_ID" value="<?php echo htmlspecialchars($row['Type_Resto']); ?>">
+                            <input type="text" class="form-control" name="Type_Resto" value="<?php echo htmlspecialchars($row['Type_Resto']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Animation</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Animation_ID" value="<?php echo htmlspecialchars($row['Nom_Anim']); ?>">
+                            <input type="text" class="form-control" name="Nom_Anim" value="<?php echo htmlspecialchars($row['Nom_Anim']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Region</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" name="Region_ID" value="<?php echo htmlspecialchars($row['Nom_Region']); ?>">
+                            <input type="text" class="form-control" name="Nom_Region" value="<?php echo htmlspecialchars($row['Nom_Region']); ?>">
                         </div>
                     </div>
                     <div class="mb-3 row">

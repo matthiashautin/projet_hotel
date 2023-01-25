@@ -1,7 +1,6 @@
 <?php
 include "../Controleur/connectadmin.php";
 include "./common/menu.php";
-// var_dump($_SESSION['posts']);
 ?>
 
 <!DOCTYPE html>

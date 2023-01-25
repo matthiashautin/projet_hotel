@@ -57,7 +57,7 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
                 ?>
             <table class="table table-bordered table-striped">
                 <thead>
-                    <th class="top-th">Logement</th>
+                    <th class="top-th">Logements</th>
                     <th class="top-th">Restauration</th>
                     <th class="top-th">Animation</th>
                     <th class="top-th">Region</th>

@@ -76,7 +76,7 @@
             </div>
             <div class="modal-body">
                 <p class="text-center">Êtes-vous sur de vouloir supprimer la reservation suivante ?</p>
-                    <h2 class="text-center"><p>Reservation_ID:</p> <?php echo htmlspecialchars($row['Reservation_ID']); ?></h2>
+                    <h2 class="text-center"><p>Logement:</p> <?php echo htmlspecialchars($row['Logements']); ?></h2>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>

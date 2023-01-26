@@ -7,6 +7,7 @@
     $reservation = $db->prepare("SELECT * FROM `Reservation` WHERE Client_ID='$id'");
     $reservation->execute();
     $client_ID = $reservation->fetch(PDO::FETCH_ASSOC);
+    error_reporting(E_ERROR | E_PARSE);
 
     //var_dump($client_ID);
 

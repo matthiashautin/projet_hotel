@@ -490,15 +490,13 @@ td a {
 }
 
 .row {
-    display: block;
-    --bs-gutter-x: 55rem;
     margin-top: -1rem;
   }
   
 .message p {
     color: white;
     font-size: 1.5rem;
-    margin-left: -16rem;
+    margin-left: 10rem;
 }
 
 h1 {
@@ -525,23 +523,8 @@ a:hover {
 
 .add_reservation_user {
     margin-top: -1rem;
-    margin: 0;
-    right: 0;
-    width: 40rem;
+    margin-left: 5rem;
 }
-
-.modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: rgb(255, 255, 255);
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
-    outline: 0;
-  }
 
   .title_nouvelle_reservation {
     margin-top: 1rem;
@@ -554,6 +537,11 @@ a:hover {
     width: 20rem;
     margin-bottom: .3rem;
     padding: .2rem 1rem;
+    border-radius: .5rem;
+  }
+
+  option {
+    border-radius: .5rem;
   }
 
   .form-control {
@@ -590,10 +578,6 @@ a:hover {
     margin-left: 2rem;
   }
 
-  .menage_checkbox{
-    margin-left: 1rem;
-  }
-
   .modal-content {
     position: relative;
     display: flex;
@@ -605,7 +589,8 @@ a:hover {
     border: 1px solid rgba(0,0,0,.2);
     border-radius: .5rem;
     outline: 0;
-    margin-top: -3rem;
+    margin-top: 1rem;
+    width: 26.5rem;
   }
 
   .modal-footer {
@@ -618,4 +603,44 @@ a:hover {
     border-top: 1px solid #dee2e6;
     border-bottom-right-radius: calc(.3rem - 1px);
     border-bottom-left-radius: calc(.3rem - 1px);
+  }
+
+  div.rows {
+    display: block;
+    width: 170%;
+    margin-top: -1rem;
+    margin-left: -19rem;
+  }
+
+  .switch {
+    margin-left: 1rem;
+  }
+
+
+section.king_card {
+    display: flex;
+}
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.76);
+    transition: 0.3s;
+    width: 30%;
+    height: 37rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.623);
+  }
+  
+  /* Add some padding inside the card container */
+  .test {
+    padding: 2px 16px;
+  }
+
+  h4{
+    margin-top: 1rem;
   }

@@ -21,7 +21,7 @@ $region = "SELECT Nom_Region FROM Region  WHERE ID='6'";
                         <label class="col-sm-2 col-form-label">Logement</label>
                         <div class="col-sm-10">
                         <select name="Logements">
-                        <option  value="">Selectionnez une données</option>
+                        <option  value="">Selectionnez un Logement</option>
                             <?php 
                             foreach ($db->query($logements) as $row) {
                             ?> 
@@ -34,7 +34,7 @@ $region = "SELECT Nom_Region FROM Region  WHERE ID='6'";
                         <label class="col-sm-2 col-form-label">Restauration</label>
                         <div class="col-sm-10">
                         <select name="Type_Resto">
-                        <option value="">Selectionnez un Type_Resto</option>
+                        <option value="">Selectionnez une Restauration</option>
                             <?php 
                             foreach ($db->query($restauration) as $row) {
                             ?>
@@ -60,7 +60,6 @@ $region = "SELECT Nom_Region FROM Region  WHERE ID='6'";
                         <label class="col-sm-2 col-form-label">Region</label>
                         <div class="col-sm-10">
                         <select name="Nom_Region">
-                        <option value="">Selectionnez une Region</option>
                             <?php 
                             foreach ($db->query($region) as $row) {
                             ?>
@@ -72,7 +71,8 @@ $region = "SELECT Nom_Region FROM Region  WHERE ID='6'";
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Menage</label>
                         <div class="col-sm-10">
-                            <input type="checkbox" name="Menage"  class="menage_checkbox">
+                            <input type="radio" class="switch" value="Oui" name="Menage">&nbsp Oui</option>
+                            <input type="radio" class="switch" value="Non" name="Menage">&nbsp Non</option>
                         </div>
                     </div>
                     <div class="mb-3 row">

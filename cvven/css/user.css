@@ -340,7 +340,7 @@ main {
 }
 
 .title-region h1 {
-    margin-top: 10rem;
+    margin-top: 9rem;
     color: white;
     text-transform: uppercase;
     font-size: 2rem;
@@ -349,6 +349,7 @@ main {
 .title-p p {
     font-size: 1rem;
     color: white;
+    margin-bottom: 0.5rem;
 }
 
 @keyframes fade {
@@ -521,3 +522,100 @@ a:hover {
     width: 58rem;
     top: 2rem;
 }
+
+.add_reservation_user {
+    margin-top: -1rem;
+    margin: 0;
+    right: 0;
+    width: 40rem;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+  }
+
+  .title_nouvelle_reservation {
+    margin-top: 1rem;
+    margin-left: 5.5rem;
+    font-size: 1.5rem;
+  }
+
+  select {
+    word-wrap: normal;
+    width: 20rem;
+    margin-bottom: .3rem;
+    padding: .2rem 1rem;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 17rem;
+  }
+
+  .col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    margin-left: 2.3rem;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+    margin-left: 2rem;
+  }
+
+  .menage_checkbox{
+    margin-left: 1rem;
+  }
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    pointer-events: auto;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    outline: 0;
+    margin-top: -3rem;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .7rem 2rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+  }

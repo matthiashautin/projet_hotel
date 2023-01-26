@@ -70,6 +70,7 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
                     include '../Modele/user_res/vos_reservation.php';
                     ?>
             </table>
+        </div>
     </div>
 <?php 
 

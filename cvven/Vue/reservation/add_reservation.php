@@ -24,10 +24,11 @@ $region = "SELECT Nom_Region FROM Region";
                         <label class="col-sm-2 col-form-label">Logement</label>
                         <div class="col-sm-10">
                         <select name="Logements">
+                        <option value="">Selectionnez une données</option>
                             <?php 
                             foreach ($db->query($logements) as $row) {
-                            ?>
-                                    <option value="<?php echo $row['Logements'] ?>"><?php echo htmlspecialchars($row['Logements']); ?></option>
+                            ?> 
+                                <option value="<?php echo $row['Logements'] ?>"><?php echo htmlspecialchars($row['Logements']); ?></option>
                         <?php    } ?>
                         </select>
                         </div>
@@ -36,6 +37,7 @@ $region = "SELECT Nom_Region FROM Region";
                         <label class="col-sm-2 col-form-label">Nom_Client</label>
                         <div class="col-sm-10">
                         <select name="Nom">
+                        <option value="">Selectionnez un Nom</option>
                             <?php 
                             foreach ($db->query($client) as $row) {
                             ?>
@@ -48,6 +50,7 @@ $region = "SELECT Nom_Region FROM Region";
                         <label class="col-sm-2 col-form-label">Restauration</label>
                         <div class="col-sm-10">
                         <select name="Type_Resto">
+                        <option value="">Selectionnez un Type_Resto</option>
                             <?php 
                             foreach ($db->query($restauration) as $row) {
                             ?>
@@ -60,6 +63,7 @@ $region = "SELECT Nom_Region FROM Region";
                         <label class="col-sm-2 col-form-label">Animation</label>
                         <div class="col-sm-10">
                         <select name="Nom_Anim">
+                        <option value="">Selectionnez une Animation</option>
                             <?php 
                             foreach ($db->query($animation) as $row) {
                             ?>
@@ -72,6 +76,7 @@ $region = "SELECT Nom_Region FROM Region";
                         <label class="col-sm-2 col-form-label">Region</label>
                         <div class="col-sm-10">
                         <select name="Nom_Region">
+                        <option value="">Selectionnez une Region</option>
                             <?php 
                             foreach ($db->query($region) as $row) {
                             ?>
@@ -87,7 +92,7 @@ $region = "SELECT Nom_Region FROM Region";
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Date de début</label>
+                        <label class="col-sm-2 col-form-label">DateDebut</label>
                         <div class="col-sm-10">
                             <input type="date" class="form-control" name="DateDebut">
                         </div>

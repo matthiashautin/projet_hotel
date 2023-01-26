@@ -476,7 +476,7 @@ td a {
     align-items: center;
     width: 7rem;
     height: 2rem;
-    background-color: var(--red1);
+    background-color: var(--green1);
     border: 2px outset #fff;
     border-radius: 1rem;
     color: #fff;
@@ -489,13 +489,15 @@ td a {
 }
 
 .row {
+    display: block;
     --bs-gutter-x: 55rem;
     margin-top: -1rem;
   }
-
+  
 .message p {
     color: white;
     font-size: 1.5rem;
+    margin-left: -16rem;
 }
 
 h1 {
@@ -506,7 +508,6 @@ h1 {
 a:hover {
     color: white;
 }
-
 
 .modal .modal-dialog .modal-content .modal-body h2.text-center p {
     color: var(--red);

@@ -148,8 +148,9 @@ td.td-edit-delete{
 }
 
 .form-control {
-    width: 60%;
+    width: 50%;
     background-color: #fff;
+    margin-left: 40px;
 }
 
 .modal-header {
@@ -208,3 +209,57 @@ td.td-edit-delete{
     width: 118%;
     margin-left: -2rem;
 }
+
+/* CSS pour le formulaire add_reservation */
+
+/* Pour placer le titre Add Reservation au centre du formulaire */
+.modal .modal-dialog .modal-content .modal-header h5.modal-title {
+    margin-left: auto;
+    text-align: center;
+}
+
+/* CSS pour le titre au dessus des listes déroulantes 
+du formulaire pour ajouter une réservation  */
+.modal .modal-dialog .modal-content .modal-body .mb-3 label.col-sm-2 {
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+/* CSS pour les select sur le formulaire de add_reservation */
+.modal .modal-dialog .modal-content .modal-body .mb-3 .col-sm-10 select {
+    font-size: 18px;
+    width: 60%;
+    background-color: rgba(166, 166, 166, 0.689);
+    margin-left: 40px;
+}
+
+/* CSS pour le checkbox dans le formulaire de add_reservation */
+.modal .modal-dialog .modal-content .modal-body .mb-3 .col-sm-10 input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+/* .modal .modal-dialog .modal-content .modal-body .mb-3 .col-sm-10 input[type='checkbox']::before {
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    transform: scale(0);
+    transition: 120ms ease-in-out;
+    box-shadow: inset 1em 1em var(--green1);
+}
+
+.modal .modal-dialog .modal-content .modal-body .mb-3 .col-sm-10 input[type='checkbox']:checked::before {
+    transform: scale(1);
+} */
+
+
+
+
+
+
+
+

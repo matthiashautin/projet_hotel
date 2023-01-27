@@ -4,7 +4,7 @@ CREATE TABLE Client (
     Prenom VARCHAR(255) NOT NULL,
     telephone INT(20) NOT NULL UNIQUE,
     mail VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(50) NOT NULL  
+    password VARCHAR(50) NOT NULL,  
     user_type varchar(20) NOT NULL DEFAULT 'user'
 );
 

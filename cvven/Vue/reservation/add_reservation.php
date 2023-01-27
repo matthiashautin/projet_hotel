@@ -20,80 +20,80 @@ $region = "SELECT Nom_Region FROM Region";
             </div>
             <div class="modal-body">
                 <form method="POST" action="../Modele/admin_res/add.php">
-                <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Logement</label>
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Logement :</label>
                         <div class="col-sm-10">
-                        <select name="Logements">
-                            <?php 
-                            foreach ($db->query($logements) as $row) {
-                            ?>
+                            <select name="Logements">
+                                <?php
+                                foreach ($db->query($logements) as $row) {
+                                ?>
                                     <option value="<?php echo $row['Logements'] ?>"><?php echo htmlspecialchars($row['Logements']); ?></option>
-                        <?php    } ?>
-                        </select>
+                                <?php    } ?>
+                            </select>
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Nom_Client</label>
+                        <label class="col-sm-2 col-form-label">Nom_Client :</label>
                         <div class="col-sm-10">
-                        <select name="Nom">
-                            <?php 
-                            foreach ($db->query($client) as $row) {
-                            ?>
+                            <select name="Nom">
+                                <?php
+                                foreach ($db->query($client) as $row) {
+                                ?>
                                     <option value="<?php echo $row['Nom'] ?>"><?php echo htmlspecialchars($row['Nom']); ?></option>
-                        <?php    } ?>
-                        </select>
+                                <?php    } ?>
+                            </select>
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Restauration</label>
+                        <label class="col-sm-2 col-form-label">Restauration :</label>
                         <div class="col-sm-10">
-                        <select name="Type_Resto">
-                            <?php 
-                            foreach ($db->query($restauration) as $row) {
-                            ?>
+                            <select name="Type_Resto">
+                                <?php
+                                foreach ($db->query($restauration) as $row) {
+                                ?>
                                     <option value="<?php echo $row['Type_Resto'] ?>"><?php echo htmlspecialchars($row['Type_Resto']); ?></option>
-                        <?php    } ?>
-                        </select>
+                                <?php    } ?>
+                            </select>
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Animation</label>
+                        <label class="col-sm-2 col-form-label">Animation :</label>
                         <div class="col-sm-10">
-                        <select name="Nom_Anim">
-                            <?php 
-                            foreach ($db->query($animation) as $row) {
-                            ?>
+                            <select name="Nom_Anim">
+                                <?php
+                                foreach ($db->query($animation) as $row) {
+                                ?>
                                     <option value="<?php echo $row['Nom_Anim'] ?>"><?php echo htmlspecialchars($row['Nom_Anim']); ?></option>
-                        <?php    } ?>
-                        </select>
+                                <?php    } ?>
+                            </select>
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Region</label>
+                        <label class="col-sm-2 col-form-label">Region :</label>
                         <div class="col-sm-10">
-                        <select name="Nom_Region">
-                            <?php 
-                            foreach ($db->query($region) as $row) {
-                            ?>
+                            <select name="Nom_Region">
+                                <?php
+                                foreach ($db->query($region) as $row) {
+                                ?>
                                     <option value="<?php echo $row['Nom_Region'] ?>"><?php echo htmlspecialchars($row['Nom_Region']); ?></option>
-                        <?php    } ?>
-                        </select>
+                                <?php    } ?>
+                            </select>
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Menage</label>
+                        <label class="col-sm-2 col-form-label">Menage :</label>
                         <div class="col-sm-10">
                             <input type="checkbox" name="Menage">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Date de début</label>
+                        <label class="col-sm-2 col-form-label">Date de début :</label>
                         <div class="col-sm-10">
                             <input type="date" class="form-control" name="DateDebut">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Date de fin</label>
+                        <label class="col-sm-2 col-form-label">Date de fin :</label>
                         <div class="col-sm-10">
                             <input type="date" class="form-control" name="DateFin">
                         </div>

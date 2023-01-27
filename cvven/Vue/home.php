@@ -31,7 +31,7 @@ $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
                         //var_dump($rows);
                         foreach ( $rows as $row) {
                             echo "<tr>
-                                    <td><a href='reservation.php?id=".$row["ID"]."&region=LaRochelle' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
+                                    <td><a href='reservation.php?id=".$row["Nom_Region"]."&region=LaRochelle' class='text' <td>" .$row["Nom_Region"]. "</td></a></td>
                                 </tr>";
                         }
                     ?>

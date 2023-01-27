@@ -2,23 +2,9 @@
 include "../Controleur/connectuser.php";
 
 if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
-    <main class="title-region">
-        <h1>Hotel La Rochelle</h1>
-    </main>
-    <main class="title-p">
-        <p>(Charente-Maritime)</p>
-    </main>
-
-    <select name="pets" id="pet-select">
-        <option value="">--Please choose an option--</option>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="hamster">Hamster</option>
-        <option value="parrot">Parrot</option>
-        <option value="spider">Spider</option>
-        <option value="goldfish">Goldfish</option>
-    </select>
-    <img src="../Image/hotel-R.jpeg" alt="">
+        <div class="add_reservation_user">
+        <?php include('../Vue/reservation_user/add_reservation_rochelle.php'); ?>
+        </div>
 <?php
 } else if ((isset($_GET['region']) && $_GET['region'] == "LesRousses")) { ?>
     <main class="title-region">
@@ -27,6 +13,10 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
     <main class="title-p">
         <p>(Jura)</p>
     </main>
+    <section class="add_reservation_user">
+        <?php include('../Vue/reservation_user/add_reservation_rousses.php'); ?>
+    </section>
+
 <?php
 } else if ((isset($_GET['region']) && $_GET['region'] == "SaintAnthème")) { ?>
     <main class="title-region">
@@ -35,6 +25,9 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
     <main class="title-p">
         <p>(Puy-de-Dôme)</p>
     </main>
+    <section class="add_reservation_user">
+        <?php include('../Vue/reservation_user/add_reservation_antheme.php'); ?>
+    </section>
 <?php
 
 } else if ((isset($_GET['region']) && $_GET['region'] == "Villefort")) { ?>
@@ -44,6 +37,9 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
     <main class="title-p">
         <p>(Lozère)</p>
     </main>
+    <section class="add_reservation_user">
+        <?php include('../Vue/reservation_user/add_reservation_villefort.php'); ?>
+    </section>
 <?php
 
 } else if ((isset($_GET['region']) && $_GET['region'] == "reservation")) { ?>
@@ -51,7 +47,7 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
         <h1>Vos réservation</h1>
     </main>
     <div class="container">
-        <div class="row">
+        <div class="rows">
                 <?php
                     include('../Controleur/messageadmin.php');
                 ?>
@@ -70,6 +66,7 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
                     include '../Modele/user_res/vos_reservation.php';
                     ?>
             </table>
+        </div>
     </div>
 <?php 
 

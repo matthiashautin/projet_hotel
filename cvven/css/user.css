@@ -349,6 +349,7 @@ main {
 .title-p p {
     font-size: 1rem;
     color: white;
+    margin-bottom: 0.5rem;
 }
 
 @keyframes fade {
@@ -476,7 +477,7 @@ td a {
     align-items: center;
     width: 7rem;
     height: 2rem;
-    background-color: var(--red1);
+    background-color: var(--green1);
     border: 2px outset #fff;
     border-radius: 1rem;
     color: #fff;
@@ -489,13 +490,13 @@ td a {
 }
 
 .row {
-    --bs-gutter-x: 55rem;
     margin-top: -1rem;
   }
-
+  
 .message p {
     color: white;
     font-size: 1.5rem;
+    margin-left: 10rem;
 }
 
 h1 {
@@ -506,7 +507,6 @@ h1 {
 a:hover {
     color: white;
 }
-
 
 .modal .modal-dialog .modal-content .modal-body h2.text-center p {
     color: var(--red);
@@ -520,3 +520,127 @@ a:hover {
     width: 58rem;
     top: 2rem;
 }
+
+.add_reservation_user {
+    margin-top: -1rem;
+    margin-left: 5rem;
+}
+
+  .title_nouvelle_reservation {
+    margin-top: 1rem;
+    margin-left: 5.5rem;
+    font-size: 1.5rem;
+  }
+
+  select {
+    word-wrap: normal;
+    width: 20rem;
+    margin-bottom: .3rem;
+    padding: .2rem 1rem;
+    border-radius: .5rem;
+  }
+
+  option {
+    border-radius: .5rem;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 17rem;
+  }
+
+  .col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    margin-left: 2.3rem;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+    margin-left: 2rem;
+  }
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    pointer-events: auto;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    outline: 0;
+    margin-top: -4rem;
+    width: 26.5rem;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .7rem 2rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+  }
+
+  div.rows {
+    display: block;
+    width: 170%;
+    margin-top: -1rem;
+    margin-left: -19rem;
+  }
+
+  .switch {
+    margin-left: 1rem;
+  }
+
+
+section.king_card {
+    display: flex;
+}
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.76);
+    transition: 0.3s;
+    width: 30%;
+    height: 37rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.623);
+  }
+  
+  /* Add some padding inside the card container */
+  .test {
+    padding: 2px 16px;
+  }
+
+  h4{
+    margin-top: 1rem;
+  }

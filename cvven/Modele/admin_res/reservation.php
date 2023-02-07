@@ -5,7 +5,7 @@ $database = new Connection();
 $db = $database->open();
 try {
     //$sql = 'SELECT * FROM Reservation';
-    $sql = "SELECT *,Hebergement.Logements, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
+    $sql = "SELECT *,Hebergement.*, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
                 FROM Reservation AS Res
             INNER JOIN Hebergement ON Hebergement.ID = Res.Hebergement_ID
             INNER JOIN Restauration ON Restauration.ID = Res.Restauration_ID
@@ -24,6 +24,7 @@ try {
             <td><?php echo htmlspecialchars($row['Menage']); ?></td>
             <td><?php echo htmlspecialchars($row['DateDebut']); ?></td>
             <td><?php echo htmlspecialchars($row['DateFin']); ?></td>
+            <td><?php echo htmlspecialchars($row['Etat']); ?></td>
             <td class="td-edit-delete">
                 <a href="#edit_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn-edit" data-bs-toggle="modal"> Modifier</a>
                 <a href="#delete_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a>

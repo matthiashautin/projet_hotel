@@ -14,7 +14,7 @@
     if ($client_ID['Client_ID'] == $_SESSION['user_id']) {
         try {
             //$sql = "SELECT * FROM `Reservation`,`Client` WHERE ID='$id'";
-            $sql = "SELECT *,Hebergement.Logements, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
+            $sql = "SELECT *,Hebergement.*, Restauration.Type_Resto, Animation.Nom_Anim, Region.Nom_Region
             FROM Reservation AS Res
             INNER JOIN Hebergement ON Hebergement.ID = Res.Hebergement_ID
             INNER JOIN Restauration ON Restauration.ID = Res.Restauration_ID
@@ -32,13 +32,14 @@
                 <td type="checkbox"><?php echo htmlspecialchars($row['Menage']); ?></td>
                 <td><?php echo htmlspecialchars($row['DateDebut']); ?></td>
                 <td><?php echo htmlspecialchars($row['DateFin']); ?></td>
+                <td><?php echo htmlspecialchars($row['prix']); ?></td>
                 <td class="td-edit-delete">
-                    <a href="#delete_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn-delete" data-bs-toggle="modal">Supprimer</a> 
+                    <a id="supprimer" href="#delete_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn-delete" data-bs-toggle="modal">Supprimer</a> 
+                    <a id="valider" href="#confirme_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn-confirm" data-bs-toggle="modal">Confirmer</a> 
                 </td>
-                <?php include('../Vue/reservation_user/edit_delete_reservation.php'); ?>
+                <td><?php echo htmlspecialchars($row['Etat']); ?></td>
+                <?php include('../Vue/reservation_user/delete_confirme_reservation.php'); ?>
             </tr>
-
-        
         <?php
             }
         } catch (PDOException $e) {

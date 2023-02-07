@@ -8,9 +8,9 @@
         $db = $database->open();
         try{
             //preparer la sql injection pour la table animation
-            $stmt = $db->prepare("INSERT INTO Hebergement (Logements) VALUES (:Logements)");
+            $stmt = $db->prepare("INSERT INTO Hebergement (Logements, prix) VALUES (:Logements, :prix)");
             //excecuter l'injection sql instruction if-else dans l'exécution de notre requête
-            $_SESSION['message'] = ( $stmt->execute(array(':Logements' => $_POST['Logements'] )) ) ? "Nouvelle Hebergement ajouté avec succès" : "Une erreur s'est produite. Impossible d'ajouter cet Hebergement";
+            $_SESSION['message'] = ( $stmt->execute(array(':Logements' => $_POST['Logements'], ':prix' => $_POST['prix'] )) ) ? "Nouvelle Hebergement ajouté avec succès" : "Une erreur s'est produite. Impossible d'ajouter cet Hebergement";
         }
         catch(PDOException $e){
             $_SESSION['message'] = $e->getMessage();

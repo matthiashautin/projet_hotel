@@ -10,9 +10,10 @@ if (isset($_POST['edit'])) {
         //création des variables 
         $id = $_GET['ID'];
         $Logements = $_POST['Logements'];
+        $prix = $_POST['prix'];
 
         //preparer la sql injection pour la table animation
-        $sql = "UPDATE Hebergement SET Logements = '$Logements' WHERE ID = '$id'";
+        $sql = "UPDATE Hebergement SET Logements = '$Logements',  prix = '$prix' WHERE ID = '$id'";
         //excecuter l'injection sql instruction if-else dans l'exécution de notre requête
         $_SESSION['message'] = ($db->exec($sql)) ? 'Hebergement mis à jour avec succès' : 'Une erreur est survenue. Impossible de mettre à jour cette Hebergement';
     } catch (PDOException $e) {

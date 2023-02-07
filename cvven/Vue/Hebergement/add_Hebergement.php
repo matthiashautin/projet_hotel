@@ -15,6 +15,13 @@
               <input type="text" class="form-control" name="Logements">
             </div>
           </div>
+
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label">Prix</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="prix">
+            </div>
+          </div>
           
       </div>
       <div class="modal-footer">

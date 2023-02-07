@@ -14,6 +14,12 @@
                             <input type="text" class="form-control" name="Logements" value="<?php echo htmlspecialchars($row['Logements']); ?>">
                         </div>
                     </div>
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Prix</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="prix" value="<?php echo htmlspecialchars($row['prix']); ?>">
+                        </div>
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>

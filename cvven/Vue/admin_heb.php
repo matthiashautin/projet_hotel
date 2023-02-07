@@ -31,6 +31,7 @@ include "./common/menu.php";
                     <thead>
                         <th class="top-th">ID</th>
                         <th class="top-th">Logements</th>
+                        <th class="top-th">Prix</th>
                         <th class="top-th">Action</th>
                     </thead>
                     <?php

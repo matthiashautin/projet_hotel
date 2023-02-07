@@ -39,6 +39,7 @@ include "./common/menu.php";
                         <th class="top-th">Menage</th>
                         <th class="top-th">datedebut</th>
                         <th class="top-th">datefin</th>
+                        <th class="top-th">Etat</th>
                         <th class="top-th">Action</th>
                     </thead>
                     <?php

@@ -27,3 +27,4 @@ if (isset($_POST['add'])) {
     $_SESSION['message'] = "Remplissez d'abord le formulaire d'ajout";
 }
 header('location: ../../Vue/home.php');
+?>

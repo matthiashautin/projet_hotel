@@ -39,7 +39,7 @@ $region = "SELECT Nom_Region FROM Region  WHERE ID='4'";
         </div>
     </div>
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content-res">
             <div class="modal-header">
                 <h5 class="modal-title" id="ModalLabel">Créer Votre Réservation</h5>
             </div>

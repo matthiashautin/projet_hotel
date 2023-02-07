@@ -429,6 +429,8 @@ ul {
     padding: auto;
     margin-top: 2rem;
     width: 80%;
+    text-align: center;
+    vertical-align : middle;
 }
 
 th {
@@ -447,6 +449,7 @@ th.top-th {
     background-color: var(--green);
     padding: 1rem;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 tr,
@@ -500,9 +503,29 @@ td a {
 }
 
 .btn-delete:hover {
-    background-color: #9e1a0b;
+    background-color: #861d11;
     color: #fff;
 }
+
+.btn-confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    background-color: var(--blue);
+    border: 2px outset #fff;
+    border-radius: 1rem;
+    color: #fff;
+    transition: .3s;
+    margin-top: .5rem;
+}
+
+.btn-confirm:hover {
+    background-color: #15448a;
+    color: #fff;
+}
+
 
 .row {
     margin-top: -1rem;
@@ -603,8 +626,24 @@ option {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: .5rem;
     outline: 0;
+    margin-top: 4rem;
+    width: 26.5rem;
+}
+
+.modal-content-res {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    pointer-events: auto;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    outline: 0;
     margin-top: -4rem;
     width: 26.5rem;
+
 }
 
 .modal-footer {
@@ -644,6 +683,7 @@ section.king_card {
     height: 38rem;
     margin-left: 5rem;
     margin-top: 3rem;
+    border: 0;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -655,25 +695,9 @@ section.king_card {
 .test {
     padding: 2px 16px;
 }
-
-.prix {
-    margin-left: 90%;
-}
-
-h4 {
-    margin-top: 1rem;
-}
-
-.test1 {
-    background-color: #f1f1f1;
-    padding: 5px;
-    z-index: 1;
-    top: 0;
-    width: 100%;
-}
-
-.test1 h4 {
-    text-align: center;
+.card-header h4 {
+    margin: .5rem 0 .5rem 0;
+    padding-left: 1rem;
     font-weight:bolder;
 }
 
@@ -693,3 +717,56 @@ h4 {
     padding: 2px 16px;
     overflow-y: scroll;
 }
+
+.prix h5 {
+    padding-top: .7rem;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.ruban-prix {
+    opacity: .5;
+    font-size: 40px;
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgb(8, 36, 0) 7%, rgb(13, 110, 13) 45%, rgb(35, 196, 35) 80%);
+    width: 290px;
+    height: 3rem;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: right;
+    border-radius: 0% 0% 0% 100%;
+}
+
+.content .ruban-prix:hover {
+    opacity: 1;
+  }
+  .content .ruban-prix .prix {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  .content .ruban-prix:hover .prix {
+    opacity: 1;
+    transform: translateX(-90px);
+    -webkit-transform: translateX(-90px);
+  }
+
+
+  .header {
+    background-color: #f1f1f1;
+  }
+
+  
+  .progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+  }
+  

@@ -43,7 +43,9 @@ if ((isset($_GET['region']) && $_GET['region'] == "LaRochelle")) { ?>
                     <th class="top-th">Menage</th>
                     <th class="top-th">datedebut</th>
                     <th class="top-th">datefin</th>
+                    <th class="top-th">prix</th>
                     <th class="top-th">Action</th>
+                    <th class="top-th">Etat</th>
                 </thead>
                 <?php
                 include '../Modele/user_res/vos_reservation.php';

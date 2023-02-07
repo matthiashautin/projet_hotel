@@ -231,10 +231,22 @@ img {
     vertical-align: middle;
 }
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
 
 
 /* Slideshow container */
@@ -261,6 +273,7 @@ img {vertical-align: middle;}
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(210, 210, 210, 0.616);
+    -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -424,7 +437,7 @@ th {
     border: .1rem solid #ddd;
 }
 
-th{
+th {
     padding: auto;
     padding: 1rem;
     border: .1rem solid #ddd;
@@ -435,7 +448,9 @@ th.top-th {
     padding: 1rem;
     text-transform: uppercase;
 }
-tr,td {
+
+tr,
+td {
     padding: .2rem 3rem;
     background-color: #666;
     border: 1px solid #ddd;
@@ -485,14 +500,14 @@ td a {
 }
 
 .btn-delete:hover {
-    background-color: #25581a;
+    background-color: #9e1a0b;
     color: #fff;
 }
 
 .row {
     margin-top: -1rem;
-  }
-  
+}
+
 .message p {
     color: white;
     font-size: 1.5rem;
@@ -513,7 +528,6 @@ a:hover {
     font-size: 1em;
 }
 
-
 .container {
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -526,25 +540,25 @@ a:hover {
     margin-left: 5rem;
 }
 
-  .title_nouvelle_reservation {
+.title_nouvelle_reservation {
     margin-top: 1rem;
     margin-left: 5.5rem;
     font-size: 1.5rem;
-  }
+}
 
-  select {
+select {
     word-wrap: normal;
     width: 20rem;
     margin-bottom: .3rem;
     padding: .2rem 1rem;
     border-radius: .5rem;
-  }
+}
 
-  option {
+option {
     border-radius: .5rem;
-  }
+}
 
-  .form-control {
+.form-control {
     display: block;
     width: 100%;
     padding: .375rem .75rem;
@@ -559,26 +573,26 @@ a:hover {
     -moz-appearance: none;
     appearance: none;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     width: 17rem;
-  }
+}
 
-  .col-form-label {
+.col-form-label {
     padding-top: calc(.375rem + 1px);
     padding-bottom: calc(.375rem + 1px);
     margin-bottom: 0;
     font-size: inherit;
     line-height: 1.5;
     margin-left: 2.3rem;
-  }
+}
 
-  .col-sm-10 {
+.col-sm-10 {
     flex: 0 0 auto;
     width: 83.33333333%;
     margin-left: 2rem;
-  }
+}
 
-  .modal-content {
+.modal-content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -586,14 +600,14 @@ a:hover {
     pointer-events: auto;
     background-color: rgb(255, 255, 255);
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: .5rem;
     outline: 0;
     margin-top: -4rem;
     width: 26.5rem;
-  }
+}
 
-  .modal-footer {
+.modal-footer {
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
@@ -603,44 +617,79 @@ a:hover {
     border-top: 1px solid #dee2e6;
     border-bottom-right-radius: calc(.3rem - 1px);
     border-bottom-left-radius: calc(.3rem - 1px);
-  }
+}
 
-  div.rows {
+div.rows {
     display: block;
     width: 170%;
     margin-top: -1rem;
     margin-left: -19rem;
-  }
+}
 
-  .switch {
+.switch {
     margin-left: 1rem;
-  }
+}
 
 
 section.king_card {
     display: flex;
 }
 
-  .card {
+.card {
     /* Add shadows to create the "card" effect */
+    position: relative;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.76);
     transition: 0.3s;
     width: 30%;
-    height: 37rem;
+    height: 38rem;
     margin-left: 5rem;
     margin-top: 3rem;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.623);
-  }
-  
-  /* Add some padding inside the card container */
-  .test {
-    padding: 2px 16px;
-  }
+}
 
-  h4{
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.623);
+}
+
+/* Add some padding inside the card container */
+.test {
+    padding: 2px 16px;
+}
+
+.prix {
+    margin-left: 90%;
+}
+
+h4 {
     margin-top: 1rem;
-  }
+}
+
+.test1 {
+    background-color: #f1f1f1;
+    padding: 5px;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.test1 h4 {
+    text-align: center;
+    font-weight:bolder;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 10px;
+    background: var(--green1);
+    width: 0%;
+}
+
+.content {
+    padding: 2px 16px;
+    overflow-y: scroll;
+}

@@ -19,22 +19,45 @@ $region = "SELECT Nom_Region FROM Region  WHERE ID='5'";
 <section class="king_card">
     <div class="card">
         <img src="../Image/chambre-parentale-couleurs-et-deco-img_f2919f850e836ba8_14-2403-1-78ef3ac.jpg" alt="Avatar" style="width:100%">
-        <div class="image-galerie">
-            <div class="test">
-                <h4><b>Chambre doubles Beluga</b></h4>
-                <p>Voici une de nos chambres d'hôtel spacieuses et lumineuses, avec des équipements modernes pour assurer un séjour confortable.<br>
-                    Vous pourrez vous détendre sur un lit moelleux. Nous proposons également différentes animations qui vous conviendront certainement.</p>
+        <div class="test1">
+            <h4>Chambre doubles Beluga</h4>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
             </div>
         </div>
+        <div class="content">
+            <p>Voici une de nos chambres d'hôtel spacieuses et lumineuses, avec des équipements modernes pour assurer un séjour confortable.<br>
+                Vous pourrez vous détendre sur un lit moelleux. Nous proposons également différentes animations qui vous conviendront certainement.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione nostrum eaque provident culpa, dolorum magnam aliquam maxime facilis fugiat quidem, ullam excepturi dicta sit ducimus quam voluptatibus sint earum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus odio culpa earum. Ipsam, fugiat pariatur soluta quo cupiditate, quibusdam quaerat blanditiis consectetur veritatis ad distinctio molestias aut eaque deleniti.</p>
+        </div>
+        <script>
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
     </div>
+
     <div class="card">
         <img src="../Image/gvalc-penthouse-suite-6918-hor-clsc.jpg" alt="Avatar" style="width:100%">
         <div class="image-galerie">
             <div class="test">
-                <h4><b>Chambre doubles du Lion d'Or</b></h4>
+                <h4>Chambre doubles du Lion d'Or</h4>
                 <p>La Chambre Lion d'Or est un véritable joyau de notre hôtel. <br>
                     Conçue pour offrir un séjour de luxe et de confort, elle est décorée dans des tons chauds et élégants qui rappellent la noblesse.
-                    La chambre est spacieuse et lumineuse, elle est équipée d'un lit king-size confortable avec une literie haut de gamme.</p>
+                    La chambre est spacieuse et lumineuse, elle est équipée d'un lit king-size confortable avec une literie haut de gamme.
+                </p>
+                <div class="prix">
+                    <h5>100€</h5>
+                </div>
             </div>
         </div>
     </div>

@@ -754,8 +754,8 @@ section.king_card {
   }
   .content .ruban-prix:hover .prix {
     opacity: 1;
-    transform: translateX(-90px);
-    -webkit-transform: translateX(-90px);
+    transform: translateX(-60px);
+    -webkit-transform: translateX(-60px);
   }
 
 

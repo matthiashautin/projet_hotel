@@ -22,15 +22,12 @@ $price_chambre_4 = "SELECT prix FROM Hebergement WHERE ID='4'";
     <div class="card">
         <img src="../Image/chambre-parentale-couleurs-et-deco-img_f2919f850e836ba8_14-2403-1-78ef3ac.jpg" alt="Avatar" style="width:100%">
         <div class="card-header">
-                <h4>Chambre doubles du Lion d'Or</h4>
+                <h4>Chambre doubles Beluga</h4>
                 <!-- <div class="progress-container">
                     <div class="progress-bar" id="myBar"></div>
                 </div>  -->
             </div>
         <div id="info" class="content">
-            <p>Voici une de nos chambres d'hôtel spacieuses et lumineuses, avec des équipements modernes pour assurer un séjour confortable.<br>
-                Vous pourrez vous détendre sur un lit moelleux. Nous proposons également différentes animations qui vous conviendront certainement.
-            </p>
             <p>Voici une de nos chambres d'hôtel spacieuses et lumineuses, avec des équipements modernes pour assurer un séjour confortable.<br>
                 Vous pourrez vous détendre sur un lit moelleux. Nous proposons également différentes animations qui vous conviendront certainement.
             </p>
@@ -50,7 +47,7 @@ $price_chambre_4 = "SELECT prix FROM Hebergement WHERE ID='4'";
     <div class="card">
         <img src="../Image/gvalc-penthouse-suite-6918-hor-clsc.jpg" alt="Avatar" style="width:100%">
         <div class="card-header">
-                <h4>Chambre doubles du Lion d'Or</h4>
+                <h4>Chambre 4 lits du Lion d'Or</h4>
                  <!-- <div class="progress-container">
                     <div class="progress-bar" id="myBar"></div>
                 </div>  -->
@@ -58,9 +55,9 @@ $price_chambre_4 = "SELECT prix FROM Hebergement WHERE ID='4'";
                 <div class="content">
                 <p>La Chambre Lion d'Or est un véritable joyau de notre hôtel. <br>
                     Conçue pour offrir un séjour de luxe et de confort, elle est décorée dans des tons chauds et élégants qui rappellent la noblesse.
-                    La chambre est spacieuse et lumineuse, elle est équipée d'un lit king-size confortable avec une literie haut de gamme.</p>
-                    <p>Voici une de nos chambres d'hôtel spacieuses et lumineuses, avec des équipements modernes pour assurer un séjour confortable.<br>
-                Vous pourrez vous détendre sur un lit moelleux. Nous proposons également différentes animations qui vous conviendront certainement.
+                    La chambre est spacieuse et lumineuse, elle est équipée de deux lits king-size confortables ainsi que 2 autres lits simples avec une literie haut de gamme. Elle vous permettra de vivre 
+                    vos vacances en toutes sérénités avec vos enfants. Parfait pour la famille.
+                </p>
                 </p>
                 <div class="ruban-prix">
                     <div class="prix">

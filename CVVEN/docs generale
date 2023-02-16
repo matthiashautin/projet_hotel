@@ -1,0 +1,24 @@
+                                          /////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                                          /////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\                                                         
+                                          ////////////////////// VOICI LE DOCUMENT GENERAL DU PROJET CVVEN \\\\\\\\\\\\\\\\\\\\\\\
+                                          /////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                                          /////////////////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                                           
+réalisé part: Matthias HAUTIN
+
+1° - La partie conn_db.php
+      a - les informations de connexions à la base de données comme le nom d'utilisateur et le mot de passe sont stockés dans des variables et ne sont pas directement
+          visibles dans le code source. Cela consitue une bonne pratique de sécurité.
+      b - Pour la partie PDO, les options qui incluent "PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION" signifie que les erreus de base de données sont levées sous forme 
+          d'exceptions plutôt que de simple signalement. Cela contrinue à éviter les failles de sécuirté liées à la gestion des erreurs de la bdd.
+      c - les fonctions publiques 'open' et 'close' sont utilisées dans plusieurs fichiers de cette applications et permettent d'ouvrir et de fermer la connexion à la 
+          bdd quand t-on le souhaite, cela permet de limiter l'accés à la bdd.
+      d - le nom d'utilisateur et le mot de passe de la bdd sont stockés à l'exterieur du code dans un répertoire web racine, où ils ne sont pas accessible via une
+          requête HTTP. Ils sont créer en tant qu'arguments du constructeur de la classe, cela permet de protéger ses informations sensibles et de ne pas les stocker
+          en clair dans le code source.   
+      e - la fonction 'open' vérifie aussi si une connexion à la bdd est déjà ouverte avant d'en créer une nouvelle, cela permet d'une part d'éviter de saturer la bdd
+          et de limiter les erreurs concernant la création d'une nouvelle connexion donc contribue à une meilleure performance de l'application mais d'autre part elle
+          permet aussi de la sécuriser.
+ 
+2° - 
+d

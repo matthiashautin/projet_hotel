@@ -10,7 +10,7 @@ try {
         <tr>
             <td><?php echo htmlspecialchars($row['ID']); ?></td>
             <td><?php echo htmlspecialchars($row['Logements']); ?></td>
-            <td><?php echo htmlspecialchars($row['prix']); ?></td>
+            <td><?php echo htmlspecialchars($row['prix']), '€'; ?></td>
             <td class="td-edit-delete">
                 <a href="#edit_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-edit" data-bs-toggle="modal"> Modifier</a>
                 <a href="#delete_<?php echo htmlspecialchars($row['ID']); ?>" class="btn-delete" data-bs-toggle="modal"> Supprimer</a>

@@ -32,7 +32,7 @@
                 <td type="checkbox"><?php echo htmlspecialchars($row['Menage']); ?></td>
                 <td><?php echo htmlspecialchars($row['DateDebut']); ?></td>
                 <td><?php echo htmlspecialchars($row['DateFin']); ?></td>
-                <td><?php echo htmlspecialchars($row['prix']); ?></td>
+                <td><?php echo htmlspecialchars($row['prix']), '€'; ?></td>
                 <td class="td-edit-delete">
                     <a id="supprimer" href="#delete_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn-delete" data-bs-toggle="modal">Supprimer</a> 
                     <a id="valider" href="#confirme_<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn-confirm" data-bs-toggle="modal">Confirmer</a> 

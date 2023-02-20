@@ -11,6 +11,7 @@ if (isset($_POST['Connexion'])) {
 
     $mail = $_POST['mail'];
     $password = $_POST['password'];
+    //rajout password_hash()
     $password = md5($password);
 
     $pdoStat->bindValue(':mail', $mail, PDO::PARAM_STR_CHAR);

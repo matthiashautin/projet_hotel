@@ -20,7 +20,7 @@ $price_chambre_4 = "SELECT prix FROM Hebergement WHERE ID='4'";
 </main>
 <section class="king_card">
     <div class="card">
-        <img src="../Image/chambre-parentale-couleurs-et-deco-img_f2919f850e836ba8_14-2403-1-78ef3ac.jpg" alt="Avatar" style="width:100%">
+        <img src="../Image/chambre_1.jpg" alt="Avatar" style="width:100%">
         <div class="card-header">
                 <h4>Chambre doubles Beluga</h4>
                 <!-- <div class="progress-container">
@@ -45,7 +45,7 @@ $price_chambre_4 = "SELECT prix FROM Hebergement WHERE ID='4'";
         </div>
     </div>
     <div class="card">
-        <img src="../Image/gvalc-penthouse-suite-6918-hor-clsc.jpg" alt="Avatar" style="width:100%">
+        <img src="../Image/chambre_2.jpg" alt="Avatar" style="width:100%">
         <div class="card-header">
                 <h4>Chambre 4 lits du Lion d'Or</h4>
                  <!-- <div class="progress-container">

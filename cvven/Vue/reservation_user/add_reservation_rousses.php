@@ -20,7 +20,7 @@ $price_chambre_4 = "SELECT prix FROM Hebergement WHERE ID='5'";
 </main>
 <section class="king_card">
     <div class="card">
-        <img src="../Image/bp-lemanoir-lechalet-003.jpg" alt="Avatar" style="width:100%">
+        <img src="../Image/chambre_3.jpg" alt="Avatar" style="width:100%">
         <div class="card-header">
                 <h4>Chambre simple des Sommets</h4>
                 <!-- <div class="progress-container">
@@ -47,7 +47,7 @@ $price_chambre_4 = "SELECT prix FROM Hebergement WHERE ID='5'";
         </div>
     </div>
     <div class="card">
-        <img src="../Image/hotel-montalembert-18.jpg" alt="Avatar" style="width:100%">
+        <img src="../Image/chambre_4.jpg" alt="Avatar" style="width:100%">
         <div class="card-header">
                 <h4>Chambre Handi du Temps</h4>
                  <!-- <div class="progress-container">

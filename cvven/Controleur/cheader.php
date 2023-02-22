@@ -1,5 +1,6 @@
 <?php
 require_once '../Controleur/conn_db.php';
+/* Ouvre une nouvelle session de l'utilisateur et une nouvelle connection à la database */
 session_start();
 $database = new Connection();
 $db = $database->open();

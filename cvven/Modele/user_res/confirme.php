@@ -19,7 +19,7 @@
         $database->close();
     }
     else{
-    $_SESSION['message'] = 'Selectionnez réservation à confirmer en premier';
+    $_SESSION['message'] = 'Selectionnez réservation à confirmer';
     }
 
     header('location: ../../Vue/reservation.php?id&region=reservation');

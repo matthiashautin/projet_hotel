@@ -39,8 +39,25 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                <a href="../Modele/user_res/confirme.php?ID=<?php echo htmlspecialchars($row['Reservation_ID']); ?>" class="btn btn-danger"> Payer</a>
+                <form method="post" action="../Modele/user_res/confirme.php?ID=<?php echo htmlspecialchars($row['Reservation_ID']); ?>">
+                    <input type="submit" name="envoyer" value="Payer" class="btn btn-danger">
+                </form>
             </div>
+            <?php
+                $to = "greghautin@gmail.com";
+                $subject = "TEST Mail";
+                $message = "Salut, ca fonctionne ! ";
+                $headers = "Content-Type: text/plain; charset=etf-8\r\n";
+                $headers .= "From: matthiashautin@gmail.com\r\n";
+
+                if(isset($_POST['envoyer'])) {
+                    if (mail($to, $subject, $message, $headers)) {
+                        echo 'Email sent successfully!';
+                    } else {
+                        echo 'An error occurred while sending the email.';
+                    }
+                }
+            ?>
         </div>
     </div>
 </div>

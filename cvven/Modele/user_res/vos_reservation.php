@@ -29,7 +29,7 @@
                 <td><?php echo htmlspecialchars($row['Type_Resto']); ?></td>
                 <td><?php echo htmlspecialchars($row['Nom_Anim']); ?></td>
                 <td><?php echo htmlspecialchars($row['Nom_Region']); ?></td>
-                <td type="checkbox"><?php echo htmlspecialchars($row['Menage']); ?></td>
+                <td><?php echo htmlspecialchars($row['Menage']); ?></td>
                 <td><?php echo htmlspecialchars($row['DateDebut']); ?></td>
                 <td><?php echo htmlspecialchars($row['DateFin']); ?></td>
                 <td><?php echo htmlspecialchars($row['prix']), '€'; ?></td>
